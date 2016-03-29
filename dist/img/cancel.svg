@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="109px" height="109px" viewBox="0 0 109 109" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.6.1 (26313) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.35 0" in="shadowBlurOuter1" type="matrix" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <path id="path-2" d="M23,74.63589 L75.6775833,74.63589 L75.6775833,21.9998233 L23,21.9998233 L23,74.63589 L23,74.63589 Z"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" filter="url(#filter-1)">
+        <g id="Group-2" transform="translate(6.000000, 4.000000)">
+            <g id="Group">
+                <circle id="Oval-1" stroke="#FFFFFF" stroke-width="3" fill="#ED497E" cx="48.5" cy="48.5" r="48.5"></circle>
+                <mask id="mask-3" fill="white">
+                    <use xlink:href="#path-2"></use>
+                </mask>
+                <g id="Clip-2"></g>
+                <path d="M54.3886933,48.468059 L68.5476933,33.776059 C70.0806933,32.185059 70.0336933,29.653059 68.4436933,28.120059 C66.8546933,26.587059 64.3196933,26.633059 62.7876933,28.225059 L48.8336933,42.704059 L34.8796933,28.225059 C33.3486933,26.633059 30.8136933,26.587059 29.2246933,28.120059 C27.6336933,29.653059 27.5866933,32.185059 29.1196933,33.776059 L43.2796933,48.468059 L29.1206933,63.160059 C27.5876933,64.751059 27.6346933,67.284059 29.2256933,68.816059 C30.0006933,69.564059 31.0016933,69.936059 32.0006933,69.936059 C33.0486933,69.936059 34.0966933,69.526059 34.8806933,68.711059 L48.8336933,54.232059 L62.7866933,68.711059 C63.5716933,69.526059 64.6186933,69.936059 65.6666933,69.936059 C66.6656933,69.936059 67.6666933,69.564059 68.4426933,68.816059 C70.0336933,67.284059 70.0796933,64.751059 68.5466933,63.160059 L54.3886933,48.468059 Z" id="Fill-6" fill="#FFFFFF" mask="url(#mask-3)"></path>
+            </g>
+        </g>
+    </g>
+</svg>

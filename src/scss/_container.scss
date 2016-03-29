@@ -1,0 +1,120 @@
+/*CONTENEDORES*/ 
+.container{
+	display:flex;
+	flex-wrap:wrap;
+	align-items:center;
+	justify-content:center;
+	width:1024px;
+	height:768px;
+	border:1px solid red;
+	background-color: #ffffff;
+	position:absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -384px;
+	margin-left: -512px;
+}
+.container-nav{
+	display:flex;
+	background-color: silver;
+	width:1024px;
+	height:96px;
+	text-transform: uppercase;
+	justify-content:flex-end;
+}
+.container-nav-icon{
+	align-self: center;
+	justify-content:center;
+	width:42px;
+	height:42px;
+	background-color:#ffffff;
+	margin: 1rem;
+}
+.container-game{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	width:1024px;
+	height:672px;
+	background-color: #fffefe;
+}
+.container-game-info{
+	display:flex;
+	flex-wrap: wrap;
+	align-self:flex-end;
+	justify-content:center;
+	align-items:center;
+	width:680px;
+	height:336px;
+	background-color: #fffefe;
+	border: 8px solid #33bb44;
+	border-radius:16px;
+	margin:2rem;
+}
+.container-game-info-txt{
+	align-self:center;
+	padding:2rem;
+	text-align:center;
+	width:680px;
+	height:96px;
+	text-transform: uppercase;
+}
+.container-game-info-grphx{
+	display:flex;
+	justify-content: space-between;
+	align-items:center;
+	width:680px;
+	height:170px;
+	background-color:yellow
+}
+.container-game-info-grphx-btn{
+	width:84px;
+	height:84px;
+	margin:2rem;
+	background-color:grey;
+}
+.container-game-info-grphx-anim{
+	width:400px;
+	height:144px;
+	background-color:green;
+}
+//contenido
+.slide-flex{
+	width: 768px;
+	background-color:#ffffff;
+}
+//contenedores de texto
+.container_txt{
+	
+	padding: 10px;	
+}
+
+
+.seccion{
+	margin-top: 20px;
+}
+
+//máscara contenedora imágenes redonda
+.container-mask{
+	border:10px solid #999999;
+	box-shadow:#B9B7B7 0px 3px 2px;
+	margin:auto;
+	padding:0;
+	border-radius: 800px;
+}
+
+.container-rectangle{
+	float:left;
+	margin-bottom: 16px;
+	width:350px;
+}
+
+.container-round{
+	float:left;
+	width: 315px;
+	height: 315px;
+	background-color: #ffffff;
+	border: 5px solid #f2f2f2;
+	border-radius: 100%;
+
+}
