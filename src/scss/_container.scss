@@ -1,22 +1,22 @@
 /*CONTENEDORES*/ 
 .container{
+	z-index:-10;
 	display:flex;
 	flex-wrap:wrap;
 	align-items:center;
 	justify-content:center;
 	width:1024px;
 	height:768px;
-	border:1px solid red;
-	background-color: #ffffff;
 	position:absolute;
 	top: 50%;
 	left: 50%;
 	margin-top: -384px;
 	margin-left: -512px;
+	background-image: url(../img/back-game-1.svg);
+	background-repeat: no-repeat;
 }
 .container-nav{
 	display:flex;
-	background-color: silver;
 	width:1024px;
 	height:96px;
 	text-transform: uppercase;
@@ -36,7 +36,6 @@
 	align-items:center;
 	width:1024px;
 	height:672px;
-	background-color: #fffefe;
 }
 .container-game-info{
 	display:flex;
@@ -46,7 +45,7 @@
 	align-items:center;
 	width:680px;
 	height:336px;
-	background-color: #fffefe;
+	  background-color: rgba(255, 255, 255, .8);
 	border: 8px solid #33bb44;
 	border-radius:16px;
 	margin:2rem;
@@ -65,18 +64,15 @@
 	align-items:center;
 	width:680px;
 	height:170px;
-	background-color:yellow
 }
 .container-game-info-grphx-btn{
 	width:84px;
 	height:84px;
 	margin:2rem;
-	background-color:grey;
 }
 .container-game-info-grphx-anim{
 	width:400px;
-	height:144px;
-	background-color:green;
+	height:156px;
 }
 //contenido
 .slide-flex{
@@ -117,4 +113,10 @@
 	border: 5px solid #f2f2f2;
 	border-radius: 100%;
 
+}
+//imagen fondo de los divs
+.imagen-div1{
+	background-image: url(/img/back-game-1.svg);
+	background-repeat: no-repeat;
+	background-position:left;
 }
