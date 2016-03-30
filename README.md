@@ -1,9 +1,5 @@
-# Guía-de-Estilos-Portfolio
-* Colores
-* Tipografía
-  * Fuentes
-  * Encabezados
-  * Columnas de texto
-* Botones
-* Elementos de formularios
+# Estructura webapp
+* tamaño 1024 x 768. 
+* Estuctura principal posición absoluta.
+* sub estructura utilizando flex.
 
