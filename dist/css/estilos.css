@@ -9,8 +9,7 @@ body {
   padding: 0;
   background-color: #A9BC00;
   overflow-y: scroll;
-  overflow-x: hidden;
-  z-index: 50; }
+  overflow-x: hidden; }
 
 a {
   text-decoration: none; }
@@ -224,7 +223,7 @@ body {
         -ms-flex-pack: start;
             justify-content: flex-start; } }
 
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 1024px) {
   body {
     background: url("../img/back-f.svg");
     background-attachment: fixed;
@@ -272,6 +271,7 @@ body {
   margin-top: -384px;
   margin-left: -512px;
   background-image: url(../img/back-game-1.svg);
+  background-size: cover;
   background-repeat: no-repeat; }
 
 .container-nav {

@@ -1,0 +1,8 @@
+#aviso-movil-horizontal { display: none; }
+    @media only screen and (orientation:portrait) {
+        #wrapper { display:none; }
+        #aviso-movil-horizontal { display:block; }
+    }
+    @media only screen and (orientation:landscape) {
+        #aviso-movil-horizontal { display:none; }
+    }
