@@ -1,18 +1,24 @@
 /*CONTENEDORES*/ 
 .container{
-	z-index: -10;
+	//z-index: -10;
 	display: flex;
-	flex-wrap: wrap;
+	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	height: auto;
+	height: 100%;
 	width: auto;
-	//padding-top: 20%;
-	//position: absolute;
-	background-image: url(../img/mobile-1.svg);
+	position: absolute;
+	background-image: url(../img/back-game-1.svg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	padding: 20% 0 0 0;
+    background-position: bottom center;
+    
+    //background: url(../img/mobile-1.svg) no-repeat center center ; 
+  	/*-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;*/
     
     /*MEDIA QUERIES*/
     /*Tablet*/
@@ -24,44 +30,60 @@
     /*Desktop*/
     @media only screen and (min-width: 1024px){
     	background-image: url(../img/back-game-1.svg);
-    	padding: 40% 0 0 0;
-
+    	padding: 35% 0 0 0;
     }
-
 }
+
+/*.container-background{
+	max-height: 100%;
+	width: auto;
+	overflow: scroll; 
+}*/
+
 .container-game-info{
 	display:flex;
 	flex-wrap: wrap;
 	align-self: center;
 	justify-content: center;
 	align-items: center;
-	width: auto;
+	max-width: 100%;
+	width: 70%;
 	height: auto;
 	//max-device-height: 100%;
 	//max-device-width: 100%;
-	margin: 40% 20% 5% 20%; 
+	margin: 4% 20% 5% 20%; 
 	background-color: rgba(255, 255, 255, .8);
 	border: .5rem solid #33bb44;
-	border-radius: 16px;
+	border-radius: 1rem;
 	/*MEDIA QUERIES*/
     /*Tablet*/
     @media only screen and (min-width: 768px) and (max-width: 1023px){
-    	margin: 50% 20% 5% 20%; 
+    	margin: 5% 20% 5% 20%; 
     }
 
     /*Desktop*/
     @media only screen and (min-width: 1024px){
-    	margin: 5% 10% 5% 10%;
+    	margin: 5% 10% 1% 10%;
     }
 
 }
 .container-game-info-txt{
 	align-self: center;
-	padding: 2rem;
+	padding: .5rem 1rem 0rem 1rem;
 	text-align: center;
 	width: auto;
 	height: auto;
 	text-transform: uppercase;
+	/*MEDIA QUERIES*/
+    /*Tablet*/
+    @media only screen and (min-width: 768px) and (max-width: 1023px){
+    	padding: .5rem 2rem 0rem 2rem;
+    }
+
+    /*Desktop*/
+    @media only screen and (min-width: 1024px){
+    	padding: .5rem 2rem 0rem 2rem;
+    }
 }
 .container-game-info-grphx{
 	display: flex;
@@ -69,31 +91,82 @@
 	align-items: center;
 	width: auto;
 	height: auto;
-	margin: auto 2rem auto 2rem;
+	margin: auto 1rem auto 1rem;
+	/*MEDIA QUERIES*/
+    /*Tablet*/
+    @media only screen and (min-width: 768px) and (max-width: 1023px){
+    	margin: auto 2rem auto 2rem;
+    }
+
+    /*Desktop*/
+    @media only screen and (min-width: 1024px){
+    	margin: auto 2rem auto 2rem;
+    }
 }
 .container-game-info-grphx-btn-left{
-	width: 6.75rem;
-	height: 6.75rem;
-	margin: 2rem;
+	width: 3.75rem;
+	height: 3.75rem;
+	margin: 0 2rem .5rem .5rem;
 	background-image: url(../img/izquierda.svg);
 	background-size: contain;
 	background-repeat: no-repeat;
+	/*MEDIA QUERIES*/
+    /*Tablet*/
+    @media only screen and (min-width: 768px) and (max-width: 1023px){
+    	width: 5.75rem;
+	height: 5.75rem;
+	margin: 0 5rem 1rem 1rem;
+    }
+
+    /*Desktop*/
+    @media only screen and (min-width: 1024px){
+    	width: 5.75rem;
+	height: 5.75rem;
+	margin: 0 5rem 1rem 1rem;
+    }
 }
 .container-game-info-grphx-btn-right{
-	width: 6.75rem;
-	height: 6.75rem;
-	margin: 2rem;
+	width: 3.75rem;
+	height: 3.75rem;
+	margin: 0 .5rem .5rem 2rem;
 	background-image: url(../img/derecha.svg);
 	background-size: contain;
 	background-repeat: no-repeat;
+	/*MEDIA QUERIES*/
+    /*Tablet*/
+    @media only screen and (min-width: 768px) and (max-width: 1023px){
+    	width: 5.75rem;
+	height: 5.75rem;
+	margin: 0 1rem 1rem 5rem;
+    }
+
+    /*Desktop*/
+    @media only screen and (min-width: 1024px){
+    	width: 5.75rem;
+	height: 5.75rem;
+	margin: 0 1rem 1rem 5rem;
+    }
 }
 .container-game-info-grphx-anim{
-	width: 25rem;
+	width: 10rem;
 	height: 9.75rem;
-	margin: 1rem;
+	margin: .2rem;
 	//height: auto;
 	background-image: url(../img/step1.svg);
 	background-size: contain;
 	background-repeat: no-repeat;
-}
+	/*MEDIA QUERIES*/
+    /*Tablet*/
+    @media only screen and (min-width: 768px) and (max-width: 1023px){
+    width: 15rem;
+	height: 9.75rem;
+	margin: 1rem;
+    }
 
+    /*Desktop*/
+    @media only screen and (min-width: 1024px){
+    width: 15rem;
+	height: 9.75rem;
+	margin: 1rem;
+    }
+}
