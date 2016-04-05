@@ -1,10 +1,14 @@
 //ESTILOS TEXTO
 //REVISAR RITMOS VERTICALES
+html{
+    height: 100%;
+}
 body{
     font-size: 16px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     line-height: 1.5rem;
+    height: 100%;
 }
 a{
     font-size: 1rem;
@@ -31,7 +35,7 @@ h1{
 
     /*MEDIA QUERIES*/
     /*Tablet*/
-    @media screen and (min-width: 768px) and (max-width: 1023px) {
+    @media only screen and (min-width: 768px) and (max-width: 1023px){
         font-size: 2.18rem;
         line-height: 2.5rem;
         margin-top: 1.36rem;
@@ -39,7 +43,7 @@ h1{
     }
 
     /*Desktop*/
-    @media screen and (min-width: 1024px){
+    @media only screen and (min-width: 1024px){
         font-size: 2.18rem;
         line-height: 2.5rem;
         margin-top: 1.36rem;

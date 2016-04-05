@@ -263,21 +263,23 @@ body {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
+  height: auto;
   width: auto;
-  height: 100%;
-  position: absolute;
   background-image: url(../img/mobile-1.svg);
   background-size: cover;
   background-repeat: no-repeat;
+  padding: 20% 0 0 0;
   /*MEDIA QUERIES*/
   /*Tablet*/
   /*Desktop*/ }
-  @media screen and (min-width: 768px) and (max-width: 1023px) {
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
     .container {
-      background-image: url(../img/back-game-1.svg); } }
-  @media screen and (min-width: 1024px) {
+      background-image: url(../img/back-game-1.svg);
+      padding: 40% 0 0 0; } }
+  @media only screen and (min-width: 1024px) {
     .container {
-      background-image: url(../img/back-game-1.svg); } }
+      background-image: url(../img/back-game-1.svg);
+      padding: 40% 0 0 0; } }
 
 .container-game-info {
   display: -webkit-box;
@@ -287,9 +289,9 @@ body {
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
-  -webkit-align-self: flex-end;
-      -ms-flex-item-align: end;
-          align-self: flex-end;
+  -webkit-align-self: center;
+      -ms-flex-item-align: center;
+          align-self: center;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
@@ -300,19 +302,25 @@ body {
           align-items: center;
   width: auto;
   height: auto;
-  margin: 70% 20% 5% 20%;
+  margin: 40% 20% 5% 20%;
   background-color: rgba(255, 255, 255, 0.8);
   border: .5rem solid #33bb44;
   border-radius: 16px;
   /*MEDIA QUERIES*/
   /*Tablet*/
   /*Desktop*/ }
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .container-game-info {
+      margin: 50% 20% 5% 20%; } }
+  @media only screen and (min-width: 1024px) {
+    .container-game-info {
+      margin: 5% 10% 5% 10%; } }
 
 .container-game-info-txt {
   -webkit-align-self: center;
       -ms-flex-item-align: center;
           align-self: center;
-  padding: 1rem;
+  padding: 2rem;
   text-align: center;
   width: auto;
   height: auto;
@@ -333,16 +341,31 @@ body {
           align-items: center;
   width: auto;
   height: auto;
-  margin-bottom: 1rem; }
+  margin: auto 2rem auto 2rem; }
 
-.container-game-info-grphx-btn {
-  width: 5.25rem;
-  height: 5.25rem;
-  margin: 2rem; }
+.container-game-info-grphx-btn-left {
+  width: 6.75rem;
+  height: 6.75rem;
+  margin: 2rem;
+  background-image: url(../img/izquierda.svg);
+  background-size: contain;
+  background-repeat: no-repeat; }
+
+.container-game-info-grphx-btn-right {
+  width: 6.75rem;
+  height: 6.75rem;
+  margin: 2rem;
+  background-image: url(../img/derecha.svg);
+  background-size: contain;
+  background-repeat: no-repeat; }
 
 .container-game-info-grphx-anim {
   width: 25rem;
-  height: 9.75rem; }
+  height: 9.75rem;
+  margin: 1rem;
+  background-image: url(../img/step1.svg);
+  background-size: contain;
+  background-repeat: no-repeat; }
 
 /*BOTONES*/
 .btn-cam {
@@ -503,11 +526,15 @@ body {
 .color-lnk-blue-drk {
   color: #106389; }
 
+html {
+  height: 100%; }
+
 body {
   font-size: 16px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
-  line-height: 1.5rem; }
+  line-height: 1.5rem;
+  height: 100%; }
 
 a {
   font-size: 1rem;
@@ -533,13 +560,13 @@ h1 {
   /*MEDIA QUERIES*/
   /*Tablet*/
   /*Desktop*/ }
-  @media screen and (min-width: 768px) and (max-width: 1023px) {
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
     h1 {
       font-size: 2.18rem;
       line-height: 2.5rem;
       margin-top: 1.36rem;
       margin-bottom: 1.36rem; } }
-  @media screen and (min-width: 1024px) {
+  @media only screen and (min-width: 1024px) {
     h1 {
       font-size: 2.18rem;
       line-height: 2.5rem;
