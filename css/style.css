@@ -1,0 +1,627 @@
+@charset "UTF-8";
+/********************  $Reset ☰
+\********************/
+* {
+  box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #A9BC00;
+  overflow-y: scroll;
+  overflow-x: hidden; }
+
+a {
+  text-decoration: none; }
+
+/********************  $Layout ☰
+\********************/
+/*Damos estilos al menú*/
+.nav {
+  position: absolute;
+  width: 200px;
+  height: 100vh;
+  top: 0;
+  left: -220px;
+  /*Ocultamos el menú en la parte izquierda para que no se vea a menos que pulsemos sobre la hamburguesa*/
+  padding-top: 47px;
+  background-color: #1d2120;
+  border-right: 4px solid #727e03;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  /*Damos a la caja del menú una transición para que tenga un desplazamiento suave*/ }
+
+/*Estilos de los li del menú*/
+.nav__item {
+  display: block;
+  width: 96%;
+  margin: 0 auto;
+  line-height: 2;
+  position: relative;
+  /*Le damos una posición relativa para posteriormente añadirle el triangulo que indica que se está en la página actual del menú*/
+  border-bottom: 0.5px solid #3b3e3d;
+  border-top: 0.5px solid #3b3e3d;
+  background-color: transparent;
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+  color: #dde7e4; }
+
+/*Damos colocamos el triangulo negro a la pestaña del menú dónde nos encontramos actualmente*/
+.current:before {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  /*Le damos al before una posición absoluta relativa al li que lo contiene*/
+  border-top: 17px solid transparent;
+  border-left: 15px solid #1D2120;
+  border-bottom: 17px solid transparent;
+  top: 0px;
+  right: -15px;
+  /*Lo posicionamos -15px a la derecha de su contenedor*/
+  z-index: 4;
+  /*le otorgamos un z-index alto para que se posicione arriba de otros elementeos*/ }
+
+/*Colocamos el borde verde al triangulo por medio de otro trangulo verde*/
+.current:after {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  /*Le damos al after una posición absoluta relativa al li que lo contiene*/
+  border-top: 16.5px solid transparent;
+  border-left: 17px solid #727e03;
+  border-bottom: 17px solid transparent;
+  top: .5px;
+  right: -21px;
+  z-index: 1;
+  /*le otorgamos un z-index bajo para que se posicione debajo del trinagulo negro*/ }
+
+/*Estos son los estilos de la hamburguesa del menú que abre y cierra el mismo*/
+.menu-toogle {
+  position: absolute;
+  /*Lo posicionamos absolutamente para poder darle una posición y poder moverlo según el menú esté abierto o cerrado*/
+  width: 35px;
+  line-height: 1.1;
+  text-align: center;
+  top: 6.5px;
+  /*Le damos una posición top y left en donde queramos que se encuentre la hamburguesa del menú*/
+  left: 8px;
+  border-radius: 3px;
+  background-color: #142b25;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  /*Añadimos una transición para que realice un desplazamineto suave*/
+  z-index: 10; }
+
+/*Añadimos la haburguesa y le damos unos estilos*/
+.menu-toogle::before {
+  content: "☰";
+  font-size: 32px;
+  color: white; }
+
+/* Le damos unos estilos al contenedor principal*/
+.main-w {
+  width: 100%;
+  height: 100vh;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease; }
+
+.header-w figure {
+  width: 100%;
+  height: 150px;
+  text-align: center;
+  position: relative; }
+
+.header-w figure:before {
+  content: "O";
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  background-color: white;
+  border-radius: 100%;
+  color: #A9BC00;
+  font-size: 120%;
+  font-wheight: bolder;
+  font-family: verdana;
+  left: 42vw;
+  top: 9vw; }
+
+.header-w figure:after {
+  content: "O";
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  background-color: white;
+  border-radius: 100%;
+  color: #A9BC00;
+  font-size: 120%;
+  font-wheight: bolder;
+  font-family: verdana;
+  left: 50.8vw;
+  top: 9vw; }
+
+.featured-img {
+  margin: 3em 6vw 0 0;
+  border: 4px solid white;
+  border-radius: 100%; }
+
+.header-w__description {
+  width: 80%;
+  height: auto;
+  margin: 0 auto;
+  padding: 1em;
+  line-height: 2;
+  text-align: center;
+  color: #212408; }
+
+.header-w__title {
+  font-size: 300%;
+  font-family: Lobster;
+  margin: 1em 0 0 0; }
+
+.header-w__title2 {
+  font-size: 250%;
+  font-family: Lobster;
+  margin: 0; }
+
+.paragraph {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  font-family: 'Source Sans Pro', sans-serif; }
+
+/*Estos son los estilos que le dan la funcionalidad al menú*/
+/*El checkbox según esté activado o no hará que el menú aparezca o desaparezca*/
+.checkbox {
+  display: none;
+  /*Ocultamos el checkbox pues no nos interesa que se vea*/ }
+
+.checkbox:checked ~ .nav {
+  left: 0px;
+  /*Le quitamos el left negativo para que el menú vuelva a su posición original*/
+  position: fixed;
+  /* Fijamos el menú lateral para que se desplace cuando hagamos scroll*/ }
+
+.checkbox:checked ~ .main-w {
+  margin-left: 200px;
+  /*Cuando el checkbox asigna un margen al contenedor principal para que se desplace junto con el menú*/ }
+
+.checkbox:checked ~ .menu-toogle {
+  left: 208px;
+  position: fixed;
+  /*Fijamos la hamburgues para que se desplace junto con el menú*/ }
+
+body {
+  background: url("../img/aaa.jpg");
+  background-attachment: fixed;
+  text-rendering: optimizeLegibility;
+  width: 100%;
+  color: #404040; }
+
+@media only screen and (min-width: 320px) {
+  body {
+    background: url("../img/back-f.svg");
+    background-attachment: fixed;
+    background-color: lightblue; }
+  .container-round {
+    margin: auto; } }
+
+@media only screen and (min-width: 768px) {
+  body {
+    background: url("../img/back-f.svg");
+    background-attachment: fixed;
+    background-color: orange; }
+  .columns {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2; }
+  .one-column {
+    max-width: 700px;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; } }
+
+@media only screen and (min-width: 1024px) {
+  body {
+    background: url("../img/back-f.svg");
+    background-attachment: fixed;
+    background-repeat: repeat;
+    background-color: #0489b1; }
+  .columns {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3; }
+  .columns-img {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    height: 322px; }
+  .one-column {
+    max-width: 700px;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; } }
+
+/*CONTENEDORES*/
+.container {
+  z-index: -10;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: auto;
+  width: auto;
+  background-image: url(../img/mobile-1.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 20% 0 0 0;
+  /*MEDIA QUERIES*/
+  /*Tablet*/
+  /*Desktop*/ }
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .container {
+      background-image: url(../img/back-game-1.svg);
+      padding: 40% 0 0 0; } }
+  @media only screen and (min-width: 1024px) {
+    .container {
+      background-image: url(../img/back-game-1.svg);
+      padding: 40% 0 0 0; } }
+
+.container-game-info {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-align-self: center;
+      -ms-flex-item-align: center;
+          align-self: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: auto;
+  height: auto;
+  margin: 40% 20% 5% 20%;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: .5rem solid #33bb44;
+  border-radius: 16px;
+  /*MEDIA QUERIES*/
+  /*Tablet*/
+  /*Desktop*/ }
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .container-game-info {
+      margin: 50% 20% 5% 20%; } }
+  @media only screen and (min-width: 1024px) {
+    .container-game-info {
+      margin: 5% 10% 5% 10%; } }
+
+.container-game-info-txt {
+  -webkit-align-self: center;
+      -ms-flex-item-align: center;
+          align-self: center;
+  padding: 2rem;
+  text-align: center;
+  width: auto;
+  height: auto;
+  text-transform: uppercase; }
+
+.container-game-info-grphx {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: auto;
+  height: auto;
+  margin: auto 2rem auto 2rem; }
+
+.container-game-info-grphx-btn-left {
+  width: 6.75rem;
+  height: 6.75rem;
+  margin: 2rem;
+  background-image: url(../img/izquierda.svg);
+  background-size: contain;
+  background-repeat: no-repeat; }
+
+.container-game-info-grphx-btn-right {
+  width: 6.75rem;
+  height: 6.75rem;
+  margin: 2rem;
+  background-image: url(../img/derecha.svg);
+  background-size: contain;
+  background-repeat: no-repeat; }
+
+.container-game-info-grphx-anim {
+  width: 25rem;
+  height: 9.75rem;
+  margin: 1rem;
+  background-image: url(../img/step1.svg);
+  background-size: contain;
+  background-repeat: no-repeat; }
+
+/*BOTONES*/
+.btn-cam {
+  box-shadow: #B9B7B7 0px 3px 3px; }
+
+.btn-act {
+  display: inline-block;
+  margin: 12px;
+  box-shadow: #B9B7B7 0px 3px 3px;
+  border: 5px solid #ffffff;
+  color: #ffffff;
+  font-weight: 400;
+  text-decoration: none;
+  background-color: #d93560;
+  font-size: 16px;
+  border-radius: 10px;
+  padding: 24px;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s; }
+
+.btn-act:hover {
+  background-color: #11bbcc;
+  box-shadow: #B9B7B7 0px 1px 1px; }
+
+.btn-inact {
+  display: inline-block;
+  margin: 12px;
+  box-shadow: #B9B7B7 0px 3px 3px;
+  border: 5px solid #ffffff;
+  color: #ffffff;
+  font-weight: 400;
+  text-decoration: none;
+  background-color: #999999;
+  font-size: 16px;
+  border-radius: 10px;
+  padding: 24px; }
+
+.btn-dwnld {
+  display: inline-block;
+  margin: 12px;
+  box-shadow: #B9B7B7 0px 3px 3px;
+  border: 5px solid #ffffff;
+  color: #ffffff;
+  font-weight: 400;
+  text-decoration: none;
+  background-color: #d93560;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 10px;
+  padding: 20px;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s; }
+
+.btn-dwnld:hover {
+  background-color: #11bbcc;
+  box-shadow: #B9B7B7 0px 1px 1px; }
+
+.btn-round {
+  display: inline-block;
+  color: #ffffff;
+  height: 80px;
+  width: 70px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: 3px solid white;
+  border-radius: 50%;
+  background-color: #0097e8;
+  padding: 35px 44px;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  box-shadow: 0px 2px 2px 0px #d1cfd1; }
+
+.btn-round:hover {
+  background-color: #ed497e; }
+
+.btn-svg {
+  display: inline-block; }
+
+/*COLORES BACKGROUND*/
+.color-bg-orange {
+  background-color: #ff6633; }
+
+.color-bg-orange-drk {
+  background-color: #e63900; }
+
+.color-bg-orange-lgt {
+  background-color: #ff9f80; }
+
+.color-bg-green {
+  background-color: #33bb44; }
+
+.color-bg-green-drk {
+  background-color: #1b6425; }
+
+.color-bg-green-lgt {
+  background-color: #73d980; }
+
+.color-bg-blue {
+  background-color: #11bbcc; }
+
+.color-bg-blue-drk {
+  background-color: #0a6d76; }
+
+.color-bg-blue-lgt {
+  background-color: #89ecf5; }
+
+.color-bg-pink {
+  background-color: #ed497e; }
+
+.color-bg-pink-drk {
+  background-color: #d93560; }
+
+.color-bg-pink-lgt {
+  background-color: #ff67a7; }
+
+.color-bg-yellow {
+  background-color: #ffcc00; }
+
+.color-bg-yellow-drk {
+  background-color: #806600; }
+
+.color-bg-yellow-lgt {
+  background-color: #ffdb4d; }
+
+.color-bg-black {
+  background-color: #404040; }
+
+.color-bg-black-drk {
+  background-color: #222222; }
+
+.color-bg-black-lgt {
+  background-color: #999999; }
+
+.color-txt-grey {
+  color: #808080; }
+
+.color-txt-grey-lgt {
+  color: #b3b3b3; }
+
+.color-txt-grey-drk {
+  color: #404040; }
+
+.color-nav-orange {
+  color: #ffe580; }
+
+.color-nav-orange-lgt {
+  color: #ffefb3; }
+
+.color-nav-orange-drk {
+  color: #ffcc00; }
+
+.color-lnk-blue {
+  color: #1794cf; }
+
+.ccolor-lnk-blue-lgt {
+  color: #aadef5; }
+
+.color-lnk-blue-drk {
+  color: #106389; }
+
+html {
+  height: 100%; }
+
+body {
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  line-height: 1.5rem;
+  height: 100%; }
+
+a {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+  color: #1794cf; }
+
+p {
+  font-size: 1rem;
+  line-height: 1.45rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: #0a6d76; }
+
+h1 {
+  font-size: 1.75rem;
+  line-height: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  color: #404040;
+  /*MEDIA QUERIES*/
+  /*Tablet*/
+  /*Desktop*/ }
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    h1 {
+      font-size: 2.18rem;
+      line-height: 2.5rem;
+      margin-top: 1.36rem;
+      margin-bottom: 1.36rem; } }
+  @media only screen and (min-width: 1024px) {
+    h1 {
+      font-size: 2.18rem;
+      line-height: 2.5rem;
+      margin-top: 1.36rem;
+      margin-bottom: 1.36rem; } }
+
+h2 {
+  font-size: 1.75rem;
+  line-height: 2rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: #404040; }
+
+h3 {
+  font-size: 1.35rem;
+  line-height: 2rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: #404040; }
+
+h4 {
+  font-size: 0.9rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: #777777; }
+
+h5 {
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem; }
+
+h6 {
+  font-size: 0.625rem;
+  line-height: 2.4rem;
+  margin-top: 2.4rem;
+  margin-bottom: 2.6rem; }
+
+.uppercase {
+  text-transform: uppercase; }
+
+.txt-algn-center {
+  text-align: center; }
+
+.two-columns {
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  column-count: 2;
+  padding: 0 20px 0 20px; }
+
+.three-columns {
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  column-count: 3;
+  padding: 0 20px 0 20px; }
