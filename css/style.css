@@ -20,7 +20,6 @@
   height: 100%;
   width: auto;
   position: absolute;
-  background-image: url(../img/back-game-1.svg);
   background-size: cover;
   background-repeat: no-repeat;
   padding: 20% 0 0 0;
@@ -34,18 +33,42 @@
   /*Desktop*/ }
   @media only screen and (min-width: 768px) and (max-width: 1023px) {
     .container {
-      background-image: url(../img/back-game-1.svg);
       padding: 40% 0 0 0; } }
   @media only screen and (min-width: 1024px) {
     .container {
-      background-image: url(../img/back-game-1.svg);
       padding: 35% 0 0 0; } }
 
-/*.container-background{
-	max-height: 100%;
-	width: auto;
-	overflow: scroll; 
-}*/
+.exer1-0 {
+  background-image: url(../img/ex1-0.svg);
+  /*MEDIA QUERIES*/
+  /*Tablet*/
+  /*Desktop*/ }
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .exer1-0 {
+      background-image: url(../img/bg_2.svg); } }
+
+.exer1-1 {
+  background-image: url(../img/ex1-1.svg);
+  /*Desktop*/ }
+  @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    .exer1-1 {
+      background-image: url(../img/bg_2.svg); } }
+
+.exer1-2 {
+  background-image: url(../img/ex1-2.svg); }
+
+.exer1-3 {
+  background-image: url(../img/ex1-3.svg); }
+
+.exer1-4 {
+  background-image: url(../img/ex1-4.svg); }
+
+.exer1-ok {
+  background-image: url(../img/ex1-0.svg); }
+
+.exer1-nok {
+  background-image: url(../img/ex1-FAIL.svg); }
+
 .container-game-info {
   display: -webkit-box;
   display: -webkit-flex;
@@ -131,9 +154,10 @@
   width: 3.75rem;
   height: 3.75rem;
   margin: 0 2rem .5rem .5rem;
-  background-image: url(../img/izquierda.svg);
-  background-size: contain;
+  background-image: url(../img/izq.svg);
+  background-size: 55% 55%;
   background-repeat: no-repeat;
+  background-position: center;
   /*MEDIA QUERIES*/
   /*Tablet*/
   /*Desktop*/ }
@@ -152,9 +176,10 @@
   width: 3.75rem;
   height: 3.75rem;
   margin: 0 .5rem .5rem 2rem;
-  background-image: url(../img/derecha.svg);
-  background-size: contain;
+  background-image: url(../img/der.svg);
+  background-size: 55% 55%;
   background-repeat: no-repeat;
+  background-position: center;
   /*MEDIA QUERIES*/
   /*Tablet*/
   /*Desktop*/ }
@@ -169,11 +194,36 @@
       height: 5.75rem;
       margin: 0 1rem 1rem 5rem; } }
 
+.container-game-info-grphx-btn-camera {
+  width: 10rem;
+  height: 9.75rem;
+  margin: .2rem;
+  background-image: url(../img/camara.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  /*MEDIA QUERIES*/
+  /*Tablet*/
+  /*Desktop*/ }
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .container-game-info-grphx-btn-camera {
+      width: 15rem;
+      height: 9.75rem;
+      margin: 1rem; } }
+  @media only screen and (min-width: 1024px) {
+    .container-game-info-grphx-btn-camera {
+      width: 15rem;
+      height: 9.75rem;
+      margin: 1rem; } }
+
+.container-game-info-grphx-btn-camera:active {
+  box-shadow: #B9B7B7 0px 1px 1px;
+  position: relative;
+  top: 1px; }
+
 .container-game-info-grphx-anim {
   width: 10rem;
   height: 9.75rem;
   margin: .2rem;
-  background-image: url(../img/step1.svg);
   background-size: contain;
   background-repeat: no-repeat;
   /*MEDIA QUERIES*/
@@ -189,6 +239,21 @@
       width: 15rem;
       height: 9.75rem;
       margin: 1rem; } }
+
+.anim1-1 {
+  background-image: url(../img/step1.svg); }
+
+.anim1-2 {
+  background-image: url(../img/step2.svg); }
+
+.anim1-3 {
+  background-image: url(../img/step3.svg); }
+
+.anim-camera {
+  background-image: url(../img/camara.svg);
+  background-size: 55% 55%;
+  background-repeat: no-repeat;
+  background-position: center; }
 
 /*BOTONES*/
 .btn-cam {
@@ -202,7 +267,7 @@
   color: #ffffff;
   font-weight: 400;
   text-decoration: none;
-  background-color: #d93560;
+  background-color: #0097e8;
   font-size: 16px;
   border-radius: 10px;
   padding: 24px;
@@ -210,7 +275,7 @@
   transition: all 0.3s ease 0s; }
 
 .btn-act:hover {
-  background-color: #11bbcc;
+  background-color: #d93560;
   box-shadow: #B9B7B7 0px 1px 1px; }
 
 .btn-inact {
@@ -246,6 +311,66 @@
   background-color: #11bbcc;
   box-shadow: #B9B7B7 0px 1px 1px; }
 
+.btn-rnd-blue-act {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  box-shadow: #c1c1c1 0px 3px 3px;
+  border: 5px solid #ffffff;
+  font-weight: 400;
+  text-decoration: none;
+  background-color: #0097e8;
+  font-size: 1rem;
+  border-radius: 100%;
+  padding: 24px;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  text-transform: uppercase; }
+
+.btn-rnd-blue-act:hover {
+  background-color: #d93560;
+  box-shadow: #c1c1c1 0px 1px 1px; }
+
+.btn-rnd-red-act {
+  display: inline-block;
+  width: 3rem;
+  height: 3rem;
+  box-shadow: #c1c1c1 0px 3px 3px;
+  border: 5px solid #ffffff;
+  font-weight: 400;
+  text-decoration: none;
+  background-color: #d93560;
+  font-size: 1rem;
+  border-radius: 100%;
+  padding: 24px;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  text-transform: uppercase; }
+
+.btn-rnd-red-act:hover {
+  background-color: #0097e8;
+  box-shadow: #c1c1c1 0px 1px 1px; }
+
+.btn-rnd-green-act {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  box-shadow: #c1c1c1 0px 3px 3px;
+  border: 5px solid #ffffff;
+  font-weight: 400;
+  text-decoration: none;
+  background-color: #33BB44;
+  font-size: 1rem;
+  border-radius: 100%;
+  padding: 24px;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  text-transform: uppercase; }
+
+.btn-rnd-green-act:hover {
+  background-color: #d93560;
+  box-shadow: #c1c1c1 0px 1px 1px; }
+
 .btn-round {
   display: inline-block;
   color: #ffffff;
@@ -263,6 +388,11 @@
 
 .btn-round:hover {
   background-color: #ed497e; }
+
+.btn-round:active, .btn-rnd-green-act:active, .btn-rnd-red-act:active, .btn-rnd-blue-act:active, .btn-act:active {
+  box-shadow: #B9B7B7 0px 1px 1px;
+  position: relative;
+  top: 1px; }
 
 .btn-svg {
   display: inline-block; }
@@ -348,6 +478,9 @@
 
 .color-lnk-blue-drk {
   color: #106389; }
+
+.color-title-green {
+  color: #33bb44; }
 
 /*html{
     background: url(../img/back-game-1.svg) no-repeat center center fixed; 
