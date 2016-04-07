@@ -17,11 +17,11 @@
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 100%;
-  width: auto;
+  height: auto;
+  width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: bottom center;
+  background-position: top center;
   /*-webkit-background-size: cover;
   	-moz-background-size: cover;
   	-o-background-size: cover;
@@ -31,32 +31,69 @@
   /*Desktop*/ }
   @media only screen and (min-width: 768px) and (max-width: 1023px) {
     .container {
-      padding: 40% 0 0 0; } }
+      padding: 40% 0 0 0;
+      background-position: bottom center;
+      height: 100%;
+      width: auto; } }
+  @media only screen and (min-width: 1024px) {
+    .container {
+      background-position: bottom left;
+      height: 100%;
+      width: auto; } }
 
 .exer1-0 {
   background-image: url(../img/ex1-0.svg);
   /*MEDIA QUERIES*/
   /*Tablet*/
   /*Desktop*/ }
-  @media only screen and (min-width: 768px) and (max-width: 1023px) {
-    .exer1-0 {
-      background-image: url(../img/bg_2.svg); } }
 
 .exer1-1 {
-  background-image: url(../img/ex1-1.svg);
+  background-image: url(../img/ex1-1_desktop.svg);
+  /*MEDIA QUERIES*/
+  /*Tablet*/
   /*Desktop*/ }
-  @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
     .exer1-1 {
-      background-image: url(../img/bg_2.svg); } }
+      background-image: url(../img/ex1-1_tablet.svg); } }
+  @media only screen and (min-width: 1025px) {
+    .exer1-1 {
+      background-image: url(../img/ex1-1_desktop.svg); } }
 
 .exer1-2 {
-  background-image: url(../img/ex1-2.svg); }
+  background-image: url(../img/ex1-2_desktop.svg);
+  /*MEDIA QUERIES*/
+  /*Tablet*/
+  /*Desktop*/ }
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .exer1-2 {
+      background-image: url(../img/ex1-2_tablet.svg); } }
+  @media only screen and (min-width: 1025px) {
+    .exer1-2 {
+      background-image: url(../img/ex1-2_desktop.svg); } }
 
 .exer1-3 {
-  background-image: url(../img/ex1-3.svg); }
+  background-image: url(../img/ex1-3_desktop.svg);
+  /*MEDIA QUERIES*/
+  /*Tablet*/
+  /*Desktop*/ }
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .exer1-3 {
+      background-image: url(../img/ex1-3_tablet.svg); } }
+  @media only screen and (min-width: 1025px) {
+    .exer1-3 {
+      background-image: url(../img/ex1-3_desktop.svg); } }
 
 .exer1-4 {
-  background-image: url(../img/ex1-4.svg); }
+  background-image: url(../img/ex1-4_desktop.svg);
+  /*MEDIA QUERIES*/
+  /*Tablet*/
+  /*Desktop*/ }
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .exer1-4 {
+      background-image: url(../img/ex1-4_tablet.svg); } }
+  @media only screen and (min-width: 1025px) {
+    .exer1-4 {
+      background-image: url(../img/ex1-4_desktop.svg); } }
 
 .exer1-ok {
   background-image: url(../img/fondo_rumble_final.svg);
@@ -109,7 +146,7 @@
   -webkit-align-self: center;
       -ms-flex-item-align: center;
           align-self: center;
-  padding: .5rem 1rem 0rem 1rem;
+  padding: 0 1rem 0rem 1rem;
   text-align: center;
   width: auto;
   height: auto;
@@ -123,6 +160,22 @@
   @media only screen and (min-width: 1024px) {
     .container-game-info-txt {
       padding: .5rem 2rem 0rem 2rem; } }
+
+.container-game-info-txt-ok {
+  padding: 0 1rem 0rem 1rem;
+  text-align: center;
+  width: auto;
+  height: auto;
+  text-transform: uppercase;
+  /*MEDIA QUERIES*/
+  /*Tablet*/
+  /*Desktop*/ }
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .container-game-info-txt-ok {
+      padding: 0 60% 0rem 1rem; } }
+  @media only screen and (min-width: 1024px) {
+    .container-game-info-txt-ok {
+      padding: 0 60% 0rem 1rem; } }
 
 .container-game-info-grphx {
   display: -webkit-box;
@@ -271,7 +324,16 @@
   -webkit-justify-content: flex-end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  padding: 0 0 35% 0; }
+  padding: 0 0 12% 0;
+  /*MEDIA QUERIES*/
+  /*Tablet*/
+  /*Desktop*/ }
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .container-nav {
+      padding: 0 0 35% 0; } }
+  @media only screen and (min-width: 1024px) {
+    .container-nav {
+      padding: 0 0 35% 0; } }
 
 .container-nav2 {
   display: -webkit-box;
@@ -293,8 +355,7 @@
   -webkit-box-pack: end;
   -webkit-justify-content: flex-end;
       -ms-flex-pack: end;
-          justify-content: flex-end;
-  padding: 0 0 10% 0; }
+          justify-content: flex-end; }
 
 .container-nav-btn-cancel {
   width: 3.75rem;
@@ -333,7 +394,7 @@
   background-color: #0097e8;
   font-size: 16px;
   border-radius: 10px;
-  padding: 24px;
+  padding: 1rem;
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s; }
 
@@ -576,6 +637,9 @@
 
 .color-title-green {
   color: #33bb44; }
+
+.color-txt-white {
+  color: #ffffff; }
 
 /*html{
     background: url(../img/back-game-1.svg) no-repeat center center fixed; 

@@ -5,14 +5,14 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	height: 100%;
-	width: auto;
+	height: auto;
+	width: 100%;
 	//position: absolute;
 	//background-image: url(../img/back-game-1.svg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	//padding: 20% 0 0 0;
-	background-position: bottom center;
+	background-position: top center;
 
     //background: url(../img/mobile-1.svg) no-repeat center center ; 
   	/*-webkit-background-size: cover;
@@ -25,12 +25,20 @@
     @media only screen and (min-width: 768px) and (max-width: 1023px){
     	//background-image: url(../img/back-game-1.svg);
     	padding: 40% 0 0 0;
+        background-position: bottom center;
+        height: 100%;
+        width: auto;
+   
     }
 
     /*Desktop*/
     @media only screen and (min-width: 1024px){
     	//background-image: url(../img/back-game-1.svg);
     	//padding: 35% 0 0 0;
+        background-position: bottom left;
+        height: 100%;
+    width: auto;
+    
     }
 }
 .exer1-0 {
@@ -38,7 +46,7 @@
    /*MEDIA QUERIES*/
     /*Tablet*/
     @media only screen and (min-width: 768px) and (max-width: 1023px){
-    	background-image: url(../img/bg_2.svg);
+    	//background-image: url(../img/bg_2.svg);
     }
 
     /*Desktop*/
@@ -47,25 +55,56 @@
     }
 }
 .exer1-1 {
-	background-image: url(../img/ex1-1.svg);
-
-	@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape){
-    	background-image: url(../img/bg_2.svg);
+	background-image: url(../img/ex1-1_desktop.svg);
+    /*MEDIA QUERIES*/
+    /*Tablet*/
+	@media only screen and (min-width: 768px) and (max-width: 1024px){
+    	background-image: url(../img/ex1-1_tablet.svg);
     }
 
     /*Desktop*/
     @media only screen and (min-width: 1025px){
-    	
+    	background-image: url(../img/ex1-1_desktop.svg);
     }
 }
 .exer1-2 {
-	background-image: url(../img/ex1-2.svg);
+	background-image: url(../img/ex1-2_desktop.svg);
+    /*MEDIA QUERIES*/
+    /*Tablet*/
+    @media only screen and (min-width: 768px) and (max-width: 1024px){
+        background-image: url(../img/ex1-2_tablet.svg);
+    }
+
+    /*Desktop*/
+    @media only screen and (min-width: 1025px){
+        background-image: url(../img/ex1-2_desktop.svg);
+    }
 }
 .exer1-3 {
-	background-image: url(../img/ex1-3.svg);
+	background-image: url(../img/ex1-3_desktop.svg);
+    /*MEDIA QUERIES*/
+    /*Tablet*/
+    @media only screen and (min-width: 768px) and (max-width: 1024px){
+        background-image: url(../img/ex1-3_tablet.svg);
+    }
+
+    /*Desktop*/
+    @media only screen and (min-width: 1025px){
+        background-image: url(../img/ex1-3_desktop.svg);
+    }
 }
 .exer1-4 {
-	background-image: url(../img/ex1-4.svg);
+	background-image: url(../img/ex1-4_desktop.svg);
+    /*MEDIA QUERIES*/
+    /*Tablet*/
+    @media only screen and (min-width: 768px) and (max-width: 1024px){
+        background-image: url(../img/ex1-4_tablet.svg);
+    }
+
+    /*Desktop*/
+    @media only screen and (min-width: 1025px){
+        background-image: url(../img/ex1-4_desktop.svg);
+    }
 }
 .exer1-ok{
 	//background-image: url(../img/ex1-0.svg)
@@ -109,7 +148,7 @@
 }
 .container-game-info-txt{
 	align-self: center;
-	padding: .5rem 1rem 0rem 1rem;
+	padding: 0 1rem 0rem 1rem;
 	text-align: center;
 	width: auto;
 	height: auto;
@@ -123,6 +162,23 @@
     /*Desktop*/
     @media only screen and (min-width: 1024px){
     	padding: .5rem 2rem 0rem 2rem;
+    }
+}
+.container-game-info-txt-ok{
+    padding: 0 1rem 0rem 1rem;
+    text-align: center;
+    width: auto;
+    height: auto;
+    text-transform: uppercase;
+    /*MEDIA QUERIES*/
+    /*Tablet*/
+    @media only screen and (min-width: 768px) and (max-width: 1023px){
+        padding: 0 60% 0rem 1rem;
+    }
+
+    /*Desktop*/
+    @media only screen and (min-width: 1024px){
+        padding: 0 60% 0rem 1rem;
     }
 }
 .container-game-info-grphx{
@@ -257,11 +313,23 @@
 	flex-direction: row;
 	align-items: flex-end;
 	width: 100%;
-	height:10%;
+	height: 10%;
 	text-transform: uppercase;
 	justify-content:flex-end;
 	//opacity:10%;
-	padding: 0 0 35% 0;
+	padding: 0 0 12% 0;
+
+    /*MEDIA QUERIES*/
+    /*Tablet*/
+    @media only screen and (min-width: 768px) and (max-width: 1023px){
+        padding: 0 0 35% 0;
+    }
+
+    /*Desktop*/
+    @media only screen and (min-width: 1024px){
+        padding: 0 0 35% 0;
+    }
+
 }
 .container-nav2{
     display: flex;
@@ -272,7 +340,7 @@
     text-transform: uppercase;
     justify-content:flex-end;
     //opacity:10%;
-    padding: 0 0 10% 0;
+    //padding: 0 0 2% 0;
 }
 .container-nav-btn-cancel{
 	//align-self: flex-start;
