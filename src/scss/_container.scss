@@ -74,6 +74,7 @@
     background-repeat: no-repeat;
     width: 100%;
     height: 100%;
+    background-position: top;
 }
 .exer1-nok {
 	background-image: url(../img/ex1-FAIL.svg);
@@ -271,7 +272,7 @@
     text-transform: uppercase;
     justify-content:flex-end;
     //opacity:10%;
-    padding: 0 0 15% 0;
+    padding: 0 0 10% 0;
 }
 .container-nav-btn-cancel{
 	//align-self: flex-start;

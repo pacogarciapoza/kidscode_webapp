@@ -1,9 +1,46 @@
 .rumble-hello {
     width: 25%;
-    margin: 0 auto;
-    top: 40%;
-    left: 10%;
+    height: 25%;
+    //margin: 10%;
+    //padding: 10%;
+    //top: 40%;
+    //left: 10%;
     display:flex;
     align-items: flex-start;
     //position: absolute;
+
+    /*MEDIA QUERIES*/
+    /*Tablet*/
+    @media only screen and (min-width: 768px) and (max-width: 1023px){
+    	width: auto;
+    	height: auto;
+    }
+
+    /*Desktop*/
+    @media only screen and (min-width: 1024px){
+    	width: auto;
+    	height: auto;
+    }
+}
+
+.rumble-next{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;  
+	width: 100%;
+}
+
+.next{
+	margin-top: 40%;
+	margin-bottom: 40%;
+	/*MEDIA QUERIES*/
+    /*Tablet*/
+    @media only screen and (min-width: 768px) and (max-width: 1023px){
+    	margin-top: 90%;
+    }
+
+    /*Desktop*/
+    @media only screen and (min-width: 1024px){
+    	margin-top: 90%;
+    }
 }
