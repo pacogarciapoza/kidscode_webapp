@@ -1,123 +1,368 @@
 /*CONTENEDORES*/ 
-.container{
-	z-index:-10;
-	display:flex;
-	flex-wrap:wrap;
-	align-items:center;
-	justify-content:center;
-	width:1024px;
-	height:768px;
-	position:absolute;
-	top: 50%;
-	left: 50%;
-	margin-top: -384px;
-	margin-left: -512px;
-	background-image: url(../img/back-game-1.svg);
-	background-size:cover;
+.container {
+	//z-index: -10;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: auto;
+	width: 100%;
+	//position: absolute;
+	//background-image: url(../img/back-game-1.svg);
+	background-size: cover;
 	background-repeat: no-repeat;
+	//padding: 20% 0 0 0;
+	background-position: top center;
+
+    //background: url(../img/mobile-1.svg) no-repeat center center ; 
+  	/*-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;*/
+
+    /*MEDIA QUERIES*/
+    /*Tablet*/
+    @media only screen and (min-width: 768px) and (max-width: 1023px){
+    	//background-image: url(../img/back-game-1.svg);
+    	padding: 40% 0 0 0;
+        background-position: bottom center;
+        height: 100%;
+        width: auto;
+   
+    }
+
+    /*Desktop*/
+    @media only screen and (min-width: 1024px){
+    	//background-image: url(../img/back-game-1.svg);
+    	//padding: 35% 0 0 0;
+        background-position: bottom left;
+        height: 100%;
+    width: auto;
+    
+    }
 }
-.container-nav{
-	display:flex;
-	width:1024px;
-	height:96px;
-	text-transform: uppercase;
-	justify-content:flex-end;
+.exer1-0 {
+	background-image: url(../img/ex1-0.svg);
+   /*MEDIA QUERIES*/
+    /*Tablet*/
+    @media only screen and (min-width: 768px) and (max-width: 1023px){
+    	//background-image: url(../img/bg_2.svg);
+    }
+
+    /*Desktop*/
+    @media only screen and (min-width: 1024px){
+    	
+    }
 }
-.container-nav-icon{
-	align-self: center;
-	justify-content:center;
-	width:42px;
-	height:42px;
-	background-color:#ffffff;
-	margin: 1rem;
+.exer1-1 {
+	background-image: url(../img/ex1-1_desktop.svg);
+    /*MEDIA QUERIES*/
+    /*Tablet*/
+	@media only screen and (min-width: 768px) and (max-width: 1024px){
+    	background-image: url(../img/ex1-1_tablet.svg);
+    }
+
+    /*Desktop*/
+    @media only screen and (min-width: 1025px){
+    	background-image: url(../img/ex1-1_desktop.svg);
+    }
 }
-.container-game{
-	display:flex;
-	justify-content:center;
-	align-items:center;
-	width:1024px;
-	height:672px;
+.exer1-2 {
+	background-image: url(../img/ex1-2_desktop.svg);
+    /*MEDIA QUERIES*/
+    /*Tablet*/
+    @media only screen and (min-width: 768px) and (max-width: 1024px){
+        background-image: url(../img/ex1-2_tablet.svg);
+    }
+
+    /*Desktop*/
+    @media only screen and (min-width: 1025px){
+        background-image: url(../img/ex1-2_desktop.svg);
+    }
 }
+.exer1-3 {
+	background-image: url(../img/ex1-3_desktop.svg);
+    /*MEDIA QUERIES*/
+    /*Tablet*/
+    @media only screen and (min-width: 768px) and (max-width: 1024px){
+        background-image: url(../img/ex1-3_tablet.svg);
+    }
+
+    /*Desktop*/
+    @media only screen and (min-width: 1025px){
+        background-image: url(../img/ex1-3_desktop.svg);
+    }
+}
+.exer1-4 {
+	background-image: url(../img/ex1-4_desktop.svg);
+    /*MEDIA QUERIES*/
+    /*Tablet*/
+    @media only screen and (min-width: 768px) and (max-width: 1024px){
+        background-image: url(../img/ex1-4_tablet.svg);
+    }
+
+    /*Desktop*/
+    @media only screen and (min-width: 1025px){
+        background-image: url(../img/ex1-4_desktop.svg);
+    }
+}
+.exer1-ok{
+	//background-image: url(../img/ex1-0.svg)
+    background-image: url(../img/fondo_rumble_final.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    background-position: top;
+}
+.exer1-nok {
+	background-image: url(../img/ex1-FAIL.svg);
+}
+
 .container-game-info{
 	display:flex;
 	flex-wrap: wrap;
-	align-self:flex-end;
-	justify-content:center;
-	align-items:center;
-	width:680px;
-	height:336px;
-	  background-color: rgba(255, 255, 255, .8);
-	border: 8px solid #33bb44;
-	border-radius:16px;
-	margin:2rem;
+	align-self: center;
+	justify-content: center;
+	align-items: center;
+	max-width: 100%;
+	width: 70%;
+	height: auto;
+	//max-device-height: 100%;
+	//max-device-width: 100%;
+	margin: 4% 20% 5% 20%; 
+	background-color: rgba(255, 255, 255, .8);
+	border: .5rem solid #33bb44;
+	border-radius: 1rem;
+	/*MEDIA QUERIES*/
+    /*Tablet*/
+    @media only screen and (min-width: 768px) and (max-width: 1023px){
+    	margin: 5% 20% 5% 20%; 
+    }
+
+    /*Desktop*/
+    @media only screen and (min-width: 1024px){
+    	margin: 5% 10% 1% 10%;
+    }
+
 }
 .container-game-info-txt{
-	align-self:center;
-	padding:2rem;
-	text-align:center;
-	width:680px;
-	height:96px;
+	align-self: center;
+	padding: 0 1rem 0rem 1rem;
+	text-align: center;
+	width: auto;
+	height: auto;
 	text-transform: uppercase;
+	/*MEDIA QUERIES*/
+    /*Tablet*/
+    @media only screen and (min-width: 768px) and (max-width: 1023px){
+    	padding: .5rem 2rem 0rem 2rem;
+    }
+
+    /*Desktop*/
+    @media only screen and (min-width: 1024px){
+    	padding: .5rem 2rem 0rem 2rem;
+    }
+}
+.container-game-info-txt-ok{
+    padding: 0 1rem 0rem 1rem;
+    text-align: center;
+    width: auto;
+    height: auto;
+    text-transform: uppercase;
+    /*MEDIA QUERIES*/
+    /*Tablet*/
+    @media only screen and (min-width: 768px) and (max-width: 1023px){
+        padding: 0 60% 0rem 1rem;
+    }
+
+    /*Desktop*/
+    @media only screen and (min-width: 1024px){
+        padding: 0 60% 0rem 1rem;
+    }
 }
 .container-game-info-grphx{
-	display:flex;
+	display: flex;
 	justify-content: space-between;
-	align-items:center;
-	width:680px;
-	height:170px;
-}
-.container-game-info-grphx-btn{
-	width:84px;
-	height:84px;
-	margin:2rem;
-}
-.container-game-info-grphx-anim{
-	width:400px;
-	height:156px;
-}
-//contenido
-.slide-flex{
-	width: 768px;
-	background-color:#ffffff;
-}
-//contenedores de texto
-.container_txt{
-	
-	padding: 10px;	
-}
+	align-items: center;
+	width: auto;
+	height: auto;
+	margin: auto 1rem auto 1rem;
+	/*MEDIA QUERIES*/
+    /*Tablet*/
+    @media only screen and (min-width: 768px) and (max-width: 1023px){
+    	margin: auto 2rem auto 2rem;
+    }
 
-
-.seccion{
-	margin-top: 20px;
+    /*Desktop*/
+    @media only screen and (min-width: 1024px){
+    	margin: auto 2rem auto 2rem;
+    }
 }
-
-//máscara contenedora imágenes redonda
-.container-mask{
-	border:10px solid #999999;
-	box-shadow:#B9B7B7 0px 3px 2px;
-	margin:auto;
-	padding:0;
-	border-radius: 800px;
-}
-
-.container-rectangle{
-	float:left;
-	margin-bottom: 16px;
-	width:350px;
-}
-
-.container-round{
-	float:left;
-	width: 315px;
-	height: 315px;
-	background-color: #ffffff;
-	border: 5px solid #f2f2f2;
-	border-radius: 100%;
-
-}
-//imagen fondo de los divs
-.imagen-div1{
-	background-image: url(/img/back-game-1.svg);
+.container-game-info-grphx-btn-left{
+	width: 0.75rem;
+	height: 0.75rem;
+	margin: 0 2rem .5rem .5rem;
+	background-image: url(../img/izq.svg);
+	background-size: 55% 55%;
 	background-repeat: no-repeat;
-	background-position:left;
+	background-position: center;
+	/*MEDIA QUERIES*/
+    /*Tablet*/
+    @media only screen and (min-width: 768px) and (max-width: 1023px){
+    	width: 3.75rem;
+    	height: 3.75rem;
+    	margin: 0 5rem 1rem 1rem;
+    }
+
+    /*Desktop*/
+    @media only screen and (min-width: 1024px){
+    	width: 3.75rem;
+    	height: 3.75rem;
+    	margin: 0 5rem 1rem 1rem;
+    }
+}
+.container-game-info-grphx-btn-right{
+	width: 0.75rem;
+	height: 0.75rem;
+	margin: 0 .5rem .5rem 2rem;
+	background-image: url(../img/der.svg);
+	background-size: 55% 55%;
+	background-repeat: no-repeat;
+	background-position: center;
+	/*MEDIA QUERIES*/
+    /*Tablet*/
+    @media only screen and (min-width: 768px) and (max-width: 1023px){
+    	width: 3.75rem;
+    	height: 3.75rem;
+    	margin: 0 1rem 1rem 5rem;
+    }
+
+    /*Desktop*/
+    @media only screen and (min-width: 1024px){
+    	width: 3.75rem;
+		height: 3.75rem;
+		margin: 0 1rem 1rem 5rem;
+	}
+}
+.container-game-info-grphx-btn-camera{
+	width: 0.75rem;
+	height: 0.75rem;
+	margin: .2rem;
+	//height: auto;
+	background-image: url(../img/camara.svg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	/*MEDIA QUERIES*/
+    /*Tablet*/
+    @media only screen and (min-width: 768px) and (max-width: 1023px){
+    	width: 3.75rem;
+    	height: 3.75rem;
+    	margin: 1rem;
+    }
+
+    /*Desktop*/
+    @media only screen and (min-width: 1024px){
+    	width: 3.75rem;
+    	height: 3.75rem;
+    	margin: 1rem;
+    }
+}
+
+.container-game-info-grphx-anim{
+	width: 10rem;
+	height: 6.5rem;
+	margin: .2rem;
+	//height: auto;
+	//background-image: url(../img/step1.svg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	/*MEDIA QUERIES*/
+    /*Tablet*/
+    @media only screen and (min-width: 768px) and (max-width: 1023px){
+    	width: 15rem;
+    	height: 9.75rem;
+    	margin: 1rem;
+    }
+
+    /*Desktop*/
+    @media only screen and (min-width: 1024px){
+    	width: 15rem;
+    	height: 9.75rem;
+    	margin: 1rem;
+    }
+}
+.anim1-1{
+	background-image: url(../img/step1.svg);
+}
+.anim1-2{
+	background-image: url(../img/step2.svg);
+}
+.anim1-3{
+	background-image: url(../img/step3.svg);
+}
+.anim-camera{
+	background-image: url(../img/camara.svg);
+	background-size: 55% 55%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.container-nav{
+	display: flex;
+	flex-direction: row;
+	align-items: flex-end;
+	width: 100%;
+	height: 10%;
+	text-transform: uppercase;
+	justify-content:flex-end;
+	//opacity:10%;
+	padding: 0 0 12% 0;
+
+    /*MEDIA QUERIES*/
+    /*Tablet*/
+    @media only screen and (min-width: 768px) and (max-width: 1023px){
+        padding: 0 0 35% 0;
+    }
+
+    /*Desktop*/
+    @media only screen and (min-width: 1024px){
+        padding: 0 0 35% 0;
+    }
+
+}
+.container-nav2{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    width: 100%;
+    height:10%;
+    text-transform: uppercase;
+    justify-content:flex-end;
+    //opacity:10%;
+    //padding: 0 0 2% 0;
+}
+.container-nav-btn-cancel{
+	//align-self: flex-start;
+	width: 3.75rem;
+	height: 3.75rem;
+	margin: 0 1rem .5rem .5rem;
+	background-image: url(../img/cancel.svg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: right;
+	/*MEDIA QUERIES*/
+    /*Tablet*/
+    @media only screen and (min-width: 768px) and (max-width: 1023px){
+    	width: 5.5rem;
+    	height: 5.5rem;
+    	margin: 1rem 3rem 1rem 1rem;
+    }
+
+    /*Desktop*/
+    @media only screen and (min-width: 1024px){
+    	width: 5.5rem;
+    	height: 5.5rem;
+    	margin: 1rem 3rem 1rem 1rem;
+    }
 }

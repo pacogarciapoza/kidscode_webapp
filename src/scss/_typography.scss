@@ -1,13 +1,18 @@
 //ESTILOS TEXTO
 //REVISAR RITMOS VERTICALES
+/*html{
+    background: url(../img/back-game-1.svg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}*/
 body{
     font-size: 16px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     line-height: 1.5rem;
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
-
+    height: 100%;
 }
 a{
     font-size: 1rem;
@@ -22,32 +27,70 @@ p{
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
     color:#0a6d76;
-    }
+}
 
 h1{
-    font-size: 2.18rem;
-    line-height: 2.5rem;
-    margin-top: 1.36rem;
-    margin-bottom: 1.36rem;
-	font-weight: 700;
-	color:#404040;
+    font-size: 1.75rem;
+    line-height: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    color: #404040;
 
+    /*MEDIA QUERIES*/
+    /*Tablet*/
+    @media only screen and (min-width: 768px) and (max-width: 1023px){
+        font-size: 2.18rem;
+        line-height: 2.5rem;
+        margin-top: 1.36rem;
+        margin-bottom: 1.36rem;
+    }
+
+    /*Desktop*/
+    @media only screen and (min-width: 1024px){
+        font-size: 2.18rem;
+        line-height: 2.5rem;
+        margin-top: 1.36rem;
+        margin-bottom: 1.36rem;
+    }
 }
 h2{
     font-size: 1.75rem;
     line-height:2rem;
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
-	color:#404040;
-	
+    color:#404040;
+}
+.h2-t1{
+    font-size: 0.9rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+	/*MEDIA QUERIES*/
+    /*Tablet*/
+    @media only screen and (min-width: 768px) and (max-width: 1023px){
+        font-size: 1.75rem;
+        line-height:2rem;
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    /*Desktop*/
+    @media only screen and (min-width: 1024px){
+        font-size: 1.75rem;
+        line-height:2rem;
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
 }
 h3{
     font-size: 1.35rem;
     line-height:2rem;
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
-	color:#404040;
-	
+    color:#404040;
+    
 }
 h4{
     font-size: 0.9rem;
@@ -80,7 +123,7 @@ h6{
 
 //ALINEAR TEXTO
 .txt-algn-center{
-        text-align: center;
+    text-align: center;
 }
 //COLUMNAS DE TEXTO
 .two-columns{
