@@ -1,0 +1,86 @@
+.content-progress{
+	display: flex;
+	flex-direction: column;
+	margin: 0 2rem;
+}
+
+.progress-bar{
+	display: flex;
+	flex-direction: row;
+}
+
+.progress-numbers{
+	display: flex;
+	flex-direction: row;
+}
+
+// @mixin progress-num ($color){
+	
+// }
+
+// @mixin progress-color ($color: $primaryColorWhite){
+// 	color: $color;
+// }
+
+.progress-bar-active{
+	background-color: $primaryColorBgYellow;
+}
+
+.progress-bar-inactive{
+	background-color: $primaryColorWhite;
+}
+
+.progress-num {
+	width: 2.5rem;
+	height: 1.2rem;
+	margin: 0 .2rem;
+	text-align: center;
+}
+
+.progress-num-active{
+	color: $primaryColorBgYellow;
+}
+
+.progress-num-inactive{
+	color: $primaryColorWhite;
+}
+
+.progress-bar-start {
+	width: 2.5rem;
+	height: 1.2rem;
+	transform: skew(-20deg);
+	border-radius: 2rem 0 0 2rem;
+	margin: 0 .2rem;
+}
+
+.progress-bar-center {
+	width: 2.5rem;
+	height: 1.2rem;
+	transform: skew(-20deg);
+	margin: 0 .2rem;
+}
+
+.progress-bar-end {
+	width: 2.5rem;
+	height: 1.2rem;
+	transform: skew(-20deg);
+	border-radius: 0 2rem 2rem 0;
+	margin: 0 .2rem;
+}
+
+.progress-rumble{
+	display: flex;
+	flex-direction: row;
+}
+
+.progress-rumble-img{
+	background-image: url(../img/rumble_ficha.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 2.5rem;
+	height: 2rem;
+	margin: 0 .2rem;
+	text-align: center;
+	visibility: hidden;
+}

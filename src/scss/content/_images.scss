@@ -1,46 +1,25 @@
 .rumble-hello {
-    width: 25%;
-    height: 25%;
-    //margin: 10%;
-    //padding: 10%;
-    //top: 40%;
-    //left: 10%;
-    display:flex;
-    align-items: flex-start;
-    //position: absolute;
+    width: 10rem;
+    height: auto;
 
     /*MEDIA QUERIES*/
     /*Tablet*/
     @media only screen and (min-width: 768px) and (max-width: 1023px){
-    	width: auto;
-    	height: auto;
+    	width: 18rem;
+        height: auto;
     }
 
     /*Desktop*/
     @media only screen and (min-width: 1024px){
-    	width: auto;
-    	height: auto;
+    	width: 18rem;
+        height: auto;
     }
 }
 
-.rumble-next{
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;  
-	width: 100%;
+#rumble-ok{
+    position: absolute;
+        top: .5rem;
+        left: 18rem;
+    display: none;
 }
 
-.next{
-	margin-top: 40%;
-	margin-bottom: 40%;
-	/*MEDIA QUERIES*/
-    /*Tablet*/
-    @media only screen and (min-width: 768px) and (max-width: 1023px){
-    	margin-top: 90%;
-    }
-
-    /*Desktop*/
-    @media only screen and (min-width: 1024px){
-    	margin-top: 90%;
-    }
-}

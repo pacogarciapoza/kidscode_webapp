@@ -1,10 +1,11 @@
 /*BOTONES*/
-//Botones Adultos////A CONTINUAR
-.btn-cam{
-	box-shadow:#B9B7B7 0px 3px 3px;
-
+#btn-cam, #btn-reload, #btn-go-index {
+	display: none;
 }
+
 .btn{
+	//poner aki atributos globales y luego
+	//llamarlo como class="btn nbtn-loquesea"
 	&-act {
 		display:inline-block;
 		margin: 12px;
@@ -58,6 +59,23 @@
 		background-color: #11bbcc;
 		box-shadow:#B9B7B7 0px 1px 1px;
 	}
+	&-rnd-act {
+		//display:inline-block;
+		box-shadow: #c1c1c1 0px 3px 3px;
+		border: 5px solid #ffffff;
+		font-weight: 400;
+		text-decoration: none;
+		font-size:1rem;
+		border-radius:100%;
+		padding: 24px;
+		transition: all 0.3s ease 0s;
+		text-transform: uppercase;
+	}
+	&-rnd-act:hover{
+		//background-color: #d93560;
+		background-color: $primaryColorBgGreen;
+		box-shadow:#c1c1c1 0px 1px 1px;
+	}
 	&-rnd-blue-act {
 		display:inline-block;
 		box-shadow:#c1c1c1 0px 3px 3px;
@@ -72,7 +90,8 @@
 		text-transform: uppercase;
 	}
 	&-rnd-blue-act:hover{
-		background-color: #d93560;
+		//background-color: #d93560;
+		background-color: $primaryColorBgGreen;
 		box-shadow:#c1c1c1 0px 1px 1px;
 	}
 
@@ -91,21 +110,21 @@
 		padding: 2rem;
 		transition: all 0.3s ease 0s;
 		text-transform: uppercase;
-		   /*MEDIA QUERIES*/
-    /*Tablet*/
-    @media only screen and (min-width: 768px) and (max-width: 1023px){
-    	width: 3.75rem;
-    	height: 3.75rem;
-    	margin: 0 1rem 1rem 5rem;
-    }
+		/*MEDIA QUERIES*/
+    	/*Tablet*/
+    	@media only screen and (min-width: 768px) and (max-width: 1023px){
+    		width: 3.75rem;
+    		height: 3.75rem;
+    		margin: 0 1rem 1rem 5rem;
+    	}
 
-    /*Desktop*/
-    @media only screen and (min-width: 1024px){
-    	width: 3.75rem;
-    	height: 3.75rem;
-    	margin: 0 1rem 1rem 5rem;
-    }
-}
+    	/*Desktop*/
+    	@media only screen and (min-width: 1024px){
+    		width: 3.75rem;
+    		height: 3.75rem;
+    		margin: 0 1rem 1rem 5rem;
+    	}
+	}
 &-rnd-red-act:hover{
 	background-color: #0097e8;
 	box-shadow:#c1c1c1 0px 1px 1px;
