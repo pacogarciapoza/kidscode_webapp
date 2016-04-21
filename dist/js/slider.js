@@ -55,7 +55,6 @@ $(document).ready(function() {
 			$('#btn-cam').hide();
 			$('#btn-next').show();
 			$('#rumble-ok').show();
-
 		}
 		else if(nextSlide.data('slide')=='6') //si estamos en slide 6 mostraremos botón volver a empezar
 		{
@@ -64,6 +63,7 @@ $(document).ready(function() {
 			$('.container-txt-'+actualSlide.data('slide')).hide();
 			$('.container-txt-'+nextSlide.data('slide')).show();
 			$('#btn-next').hide();
+			$('#btn-prev').hide();
 			$('#btn-reload').show();
 		}
 
@@ -116,9 +116,7 @@ $(document).ready(function() {
 	$('#btn-next').click(nextSlider);
 	$('#btn-prev').click(prevSlider);
 	$('#btn-cam').click(nextSlider);
-	// $('#btn-reload').click(funtion(){
 
-	// });
 
 });
 

@@ -31,10 +31,22 @@
 }
 
 .progress-num {
-	width: 2.5rem;
-	height: 1.2rem;
+	width: 1.25rem;
+	height: .6rem;
 	margin: 0 .2rem;
 	text-align: center;
+
+	/*MEDIA QUERIES*/
+    /*Tablet*/
+    @media only screen and (min-width: 768px) and (max-width: 1023px){
+    	width: 2.5rem;
+		height: 1.2rem;
+    }
+    /*Desktop*/
+    @media only screen and (min-width: 1024px){
+    	width: 2.5rem;
+		height: 1.2rem;
+    }
 }
 
 .progress-num-active{
@@ -46,26 +58,62 @@
 }
 
 .progress-bar-start {
-	width: 2.5rem;
-	height: 1.2rem;
+	width: 1.25rem;
+	height: .6rem;
 	transform: skew(-20deg);
 	border-radius: 2rem 0 0 2rem;
 	margin: 0 .2rem;
+
+	/*MEDIA QUERIES*/
+    /*Tablet*/
+    @media only screen and (min-width: 768px) and (max-width: 1023px){
+    	width: 2.5rem;
+		height: 1.2rem;
+    }
+    /*Desktop*/
+    @media only screen and (min-width: 1024px){
+    	width: 2.5rem;
+		height: 1.2rem;
+    }
 }
 
 .progress-bar-center {
-	width: 2.5rem;
-	height: 1.2rem;
+	width: 1.25rem;
+	height: .6rem;
 	transform: skew(-20deg);
 	margin: 0 .2rem;
+
+	/*MEDIA QUERIES*/
+    /*Tablet*/
+    @media only screen and (min-width: 768px) and (max-width: 1023px){
+    	width: 2.5rem;
+		height: 1.2rem;
+    }
+    /*Desktop*/
+    @media only screen and (min-width: 1024px){
+    	width: 2.5rem;
+		height: 1.2rem;
+    }
 }
 
 .progress-bar-end {
-	width: 2.5rem;
-	height: 1.2rem;
+	width: 1.25rem;
+	height: .6rem;
 	transform: skew(-20deg);
 	border-radius: 0 2rem 2rem 0;
 	margin: 0 .2rem;
+
+	/*MEDIA QUERIES*/
+    /*Tablet*/
+    @media only screen and (min-width: 768px) and (max-width: 1023px){
+    	width: 2.5rem;
+		height: 1.2rem;
+    }
+    /*Desktop*/
+    @media only screen and (min-width: 1024px){
+    	width: 2.5rem;
+		height: 1.2rem;
+    }
 }
 
 .progress-rumble{
@@ -78,9 +126,21 @@
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: contain;
-	width: 2.5rem;
-	height: 2rem;
+	width: 1.25rem;
+	height: 1rem;
 	margin: 0 .2rem;
 	text-align: center;
 	visibility: hidden;
+
+	/*MEDIA QUERIES*/
+    /*Tablet*/
+    @media only screen and (min-width: 768px) and (max-width: 1023px){
+    	width: 2.5rem;
+		height: 2rem;
+    }
+    /*Desktop*/
+    @media only screen and (min-width: 1024px){
+    	width: 2.5rem;
+		height: 2rem;
+    }
 }

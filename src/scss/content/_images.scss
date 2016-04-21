@@ -1,5 +1,5 @@
 .rumble-hello {
-    width: 10rem;
+    width: 8rem;
     height: auto;
 
     /*MEDIA QUERIES*/
@@ -19,7 +19,19 @@
 #rumble-ok{
     position: absolute;
         top: .5rem;
-        left: 18rem;
+        left: 10rem;
     display: none;
+    /*MEDIA QUERIES*/
+    /*Tablet*/
+    @media only screen and (min-width: 768px) and (max-width: 1023px){
+        top: .5rem;
+        left: 18rem;
+    }
+
+    /*Desktop*/
+    @media only screen and (min-width: 1024px){
+        top: .5rem;
+        left: 18rem;
+    }
 }
 

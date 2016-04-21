@@ -121,7 +121,7 @@
   padding: 0; }
 
 .container-nav {
-  padding: 2rem;
+  padding: 1rem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -133,14 +133,23 @@
           flex-direction: row;
   position: absolute;
   top: 0;
-  width: 100%; }
+  width: 100%;
+  /*MEDIA QUERIES*/
+  /*Tablet*/
+  /*Desktop*/ }
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .container-nav {
+      padding: 2rem; } }
+  @media only screen and (min-width: 1024px) {
+    .container-nav {
+      padding: 2rem; } }
 
 .container-nav-btn-cancel {
   position: absolute;
   top: .5rem;
-  right: 2rem;
-  width: 0.15rem;
-  height: 0.15rem;
+  right: .5rem;
+  width: 0.05rem;
+  height: 0.05rem;
   margin: 0 4rem 0 0;
   background-image: url(../img/btn_cancel.svg);
   background-size: 55% 55%;
@@ -151,11 +160,15 @@
   /*Desktop*/ }
   @media only screen and (min-width: 768px) and (max-width: 1023px) {
     .container-nav-btn-cancel {
+      top: .5rem;
+      right: 2rem;
       width: 0.75rem;
       height: 0.75rem;
       /*margin: 0 5rem 1rem 1rem;*/ } }
   @media only screen and (min-width: 1024px) {
     .container-nav-btn-cancel {
+      top: .5rem;
+      right: 2rem;
       width: 0.75rem;
       height: 0.75rem;
       /*margin: 0 5rem 1rem 1rem;*/ } }
@@ -167,7 +180,7 @@
   bottom: 2rem;
   left: 0;
   right: 0;
-  max-width: 60%;
+  max-width: 80%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -192,13 +205,16 @@
   /*MEDIA QUERIES*/
   /*Tablet*/
   /*Desktop*/ }
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .container-game-info {
+      max-width: 60%; } }
+  @media only screen and (min-width: 1024px) {
+    .container-game-info {
+      max-width: 60%; } }
 
 .container-game-info-txt {
   text-transform: uppercase;
-  text-align: center;
-  /*MEDIA QUERIES*/
-  /*Tablet*/
-  /*Desktop*/ }
+  text-align: center; }
 
 .container-game-info-grphx {
   display: -webkit-box;
@@ -213,6 +229,7 @@
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
   width: 100%;
   height: auto;
   margin: 0 1rem;
@@ -221,9 +238,11 @@
   /*Desktop*/ }
 
 .container-game-info-grphx-btn-left {
-  width: 0.75rem;
-  height: 0.75rem;
-  margin: 0 2rem 0 0;
+  width: 0.5rem;
+  height: 0.5rem;
+  position: absolute;
+  left: .2rem;
+  bottom: .5rem;
   background-image: url(../img/btn_izq.svg);
   background-size: 55% 55%;
   background-repeat: no-repeat;
@@ -243,9 +262,11 @@
       /*margin: 0 5rem 1rem 1rem;*/ } }
 
 .container-game-info-grphx-btn-right {
-  width: 0.75rem;
-  height: 0.75rem;
-  margin: 0 0 0 2rem;
+  width: 0.5rem;
+  height: 0.5rem;
+  position: absolute;
+  right: .2rem;
+  bottom: .5rem;
   background-image: url(../img/btn_der.svg);
   background-size: 55% 55%;
   background-repeat: no-repeat;
@@ -256,19 +277,19 @@
   @media only screen and (min-width: 768px) and (max-width: 1023px) {
     .container-game-info-grphx-btn-right {
       width: 3.75rem;
-      height: 3.75rem;
-      /*margin: 0 1rem 1rem 5rem;*/ } }
+      height: 3.75rem; } }
   @media only screen and (min-width: 1024px) {
     .container-game-info-grphx-btn-right {
       width: 3.75rem;
-      height: 3.75rem;
-      /*margin: 0 1rem 1rem 5rem;*/ } }
+      height: 3.75rem; } }
 
-.container-game-info-grphx-reload {
-  width: 0.75rem;
-  height: 0.75rem;
-  margin: 0 0 0 2rem;
-  background-image: url(../img/btn_der.svg);
+.container-game-info-grphx-btn-reload {
+  width: 0.5rem;
+  height: 0.5rem;
+  position: absolute;
+  right: .2rem;
+  bottom: .5rem;
+  background-image: url(../img/btn_reload.svg);
   background-size: 55% 55%;
   background-repeat: no-repeat;
   background-position: center;
@@ -276,23 +297,26 @@
   /*Tablet*/
   /*Desktop*/ }
   @media only screen and (min-width: 768px) and (max-width: 1023px) {
-    .container-game-info-grphx-reload {
+    .container-game-info-grphx-btn-reload {
       width: 3.75rem;
       height: 3.75rem;
       /*margin: 0 1rem 1rem 5rem;*/ } }
   @media only screen and (min-width: 1024px) {
-    .container-game-info-grphx-reload {
+    .container-game-info-grphx-btn-reload {
       width: 3.75rem;
       height: 3.75rem;
       /*margin: 0 1rem 1rem 5rem;*/ } }
 
 .container-game-info-grphx-btn-camera {
-  width: 0.75rem;
-  height: 0.75rem;
-  margin: 0 0 0 2rem;
+  width: 0.5rem;
+  height: 0.5rem;
+  position: absolute;
+  right: .2rem;
+  bottom: .5rem;
   background-image: url(../img/btn_camara.svg);
-  background-size: contain;
   background-repeat: no-repeat;
+  background-size: 55% 55%;
+  background-position: center;
   /*MEDIA QUERIES*/
   /*Tablet*/
   /*Desktop*/ }
@@ -307,15 +331,14 @@
 
 .container-game-info-grphx-anim {
   width: 10rem;
-  height: 5rem;
+  height: 4rem;
   /*MEDIA QUERIES*/
   /*Tablet*/
   /*Desktop*/ }
   @media only screen and (min-width: 768px) and (max-width: 1023px) {
     .container-game-info-grphx-anim {
-      /*width: 15rem;
-    	height: 9.75rem;
-    	margin: 1rem;*/ } }
+      width: 15rem;
+      height: 7.5rem; } }
   @media only screen and (min-width: 1024px) {
     .container-game-info-grphx-anim {
       width: 15rem;
@@ -323,7 +346,7 @@
 
 .anim-img {
   width: 10rem;
-  height: 5rem;
+  height: 3rem;
   text-align: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -338,26 +361,6 @@
     .anim-img {
       width: 15rem;
       height: 7.5rem; } }
-
-.container-game-info-grphx-camera {
-  background-image: url(../img/btn_camara.svg);
-  background-size: 55% 55%;
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 0.75rem;
-  height: 0.75rem;
-  margin: 0 0 0 2rem;
-  /*MEDIA QUERIES*/
-  /*Tablet*/
-  /*Desktop*/ }
-  @media only screen and (min-width: 768px) and (max-width: 1023px) {
-    .container-game-info-grphx-camera {
-      width: 3.75rem;
-      height: 3.75rem; } }
-  @media only screen and (min-width: 1024px) {
-    .container-game-info-grphx-camera {
-      width: 3.75rem;
-      height: 3.75rem; } }
 
 /*BOTONES*/
 #btn-cam, #btn-reload, #btn-go-index {
@@ -763,7 +766,7 @@ h6 {
   *zoom: 1; }
 
 .rumble-hello {
-  width: 10rem;
+  width: 8rem;
   height: auto;
   /*MEDIA QUERIES*/
   /*Tablet*/
@@ -780,8 +783,19 @@ h6 {
 #rumble-ok {
   position: absolute;
   top: .5rem;
-  left: 18rem;
-  display: none; }
+  left: 10rem;
+  display: none;
+  /*MEDIA QUERIES*/
+  /*Tablet*/
+  /*Desktop*/ }
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    #rumble-ok {
+      top: .5rem;
+      left: 18rem; } }
+  @media only screen and (min-width: 1024px) {
+    #rumble-ok {
+      top: .5rem;
+      left: 18rem; } }
 
 .content-progress {
   display: -webkit-box;
@@ -824,10 +838,21 @@ h6 {
   background-color: #ffffff; }
 
 .progress-num {
-  width: 2.5rem;
-  height: 1.2rem;
+  width: 1.25rem;
+  height: .6rem;
   margin: 0 .2rem;
-  text-align: center; }
+  text-align: center;
+  /*MEDIA QUERIES*/
+  /*Tablet*/
+  /*Desktop*/ }
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .progress-num {
+      width: 2.5rem;
+      height: 1.2rem; } }
+  @media only screen and (min-width: 1024px) {
+    .progress-num {
+      width: 2.5rem;
+      height: 1.2rem; } }
 
 .progress-num-active {
   color: #ffcc00; }
@@ -836,27 +861,60 @@ h6 {
   color: #ffffff; }
 
 .progress-bar-start {
-  width: 2.5rem;
-  height: 1.2rem;
+  width: 1.25rem;
+  height: .6rem;
   -webkit-transform: skew(-20deg);
           transform: skew(-20deg);
   border-radius: 2rem 0 0 2rem;
-  margin: 0 .2rem; }
+  margin: 0 .2rem;
+  /*MEDIA QUERIES*/
+  /*Tablet*/
+  /*Desktop*/ }
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .progress-bar-start {
+      width: 2.5rem;
+      height: 1.2rem; } }
+  @media only screen and (min-width: 1024px) {
+    .progress-bar-start {
+      width: 2.5rem;
+      height: 1.2rem; } }
 
 .progress-bar-center {
-  width: 2.5rem;
-  height: 1.2rem;
+  width: 1.25rem;
+  height: .6rem;
   -webkit-transform: skew(-20deg);
           transform: skew(-20deg);
-  margin: 0 .2rem; }
+  margin: 0 .2rem;
+  /*MEDIA QUERIES*/
+  /*Tablet*/
+  /*Desktop*/ }
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .progress-bar-center {
+      width: 2.5rem;
+      height: 1.2rem; } }
+  @media only screen and (min-width: 1024px) {
+    .progress-bar-center {
+      width: 2.5rem;
+      height: 1.2rem; } }
 
 .progress-bar-end {
-  width: 2.5rem;
-  height: 1.2rem;
+  width: 1.25rem;
+  height: .6rem;
   -webkit-transform: skew(-20deg);
           transform: skew(-20deg);
   border-radius: 0 2rem 2rem 0;
-  margin: 0 .2rem; }
+  margin: 0 .2rem;
+  /*MEDIA QUERIES*/
+  /*Tablet*/
+  /*Desktop*/ }
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .progress-bar-end {
+      width: 2.5rem;
+      height: 1.2rem; } }
+  @media only screen and (min-width: 1024px) {
+    .progress-bar-end {
+      width: 2.5rem;
+      height: 1.2rem; } }
 
 .progress-rumble {
   display: -webkit-box;
@@ -874,8 +932,19 @@ h6 {
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  width: 2.5rem;
-  height: 2rem;
+  width: 1.25rem;
+  height: 1rem;
   margin: 0 .2rem;
   text-align: center;
-  visibility: hidden; }
+  visibility: hidden;
+  /*MEDIA QUERIES*/
+  /*Tablet*/
+  /*Desktop*/ }
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .progress-rumble-img {
+      width: 2.5rem;
+      height: 2rem; } }
+  @media only screen and (min-width: 1024px) {
+    .progress-rumble-img {
+      width: 2.5rem;
+      height: 2rem; } }

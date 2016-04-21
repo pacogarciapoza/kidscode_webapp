@@ -15,20 +15,31 @@
 }
 
 .container-nav {
-	padding: 2rem;
+	padding: 1rem;
 	display: flex;
 	flex-direction: row;
     position: absolute;
-    top: 0;
+        top: 0;
     width: 100%;
+
+    /*MEDIA QUERIES*/
+    /*Tablet*/
+    @media only screen and (min-width: 768px) and (max-width: 1023px){
+        padding: 2rem;
+    }
+
+    /*Desktop*/
+    @media only screen and (min-width: 1024px){
+        padding: 2rem;
+    }
 }
 
 .container-nav-btn-cancel{
     position: absolute;
         top: .5rem;
-        right: 2rem;
-    width: 0.15rem;
-    height: 0.15rem;
+        right: .5rem;
+    width: 0.05rem;
+    height: 0.05rem;
     margin: 0 4rem 0 0;
     background-image: url(../img/btn_cancel.svg);
     background-size: 55% 55%;
@@ -38,6 +49,8 @@
     /*MEDIA QUERIES*/
     /*Tablet*/
     @media only screen and (min-width: 768px) and (max-width: 1023px){
+        top: .5rem;
+        right: 2rem;
         width: 0.75rem;
         height: 0.75rem;
         /*margin: 0 5rem 1rem 1rem;*/
@@ -45,6 +58,8 @@
 
     /*Desktop*/
     @media only screen and (min-width: 1024px){
+        top: .5rem;
+        right: 2rem;
         width: 0.75rem;
         height: 0.75rem;
         /*margin: 0 5rem 1rem 1rem;*/
@@ -59,7 +74,7 @@
 	bottom: 2rem;
 	left: 0;
 	right: 0;
-	max-width: 60%;
+	max-width: 80%;
 
 	display:flex;
 	flex-wrap: wrap;
@@ -72,12 +87,12 @@
 	/*MEDIA QUERIES*/
     /*Tablet*/
     @media only screen and (min-width: 768px) and (max-width: 1023px){
-    	
+    	max-width: 60%;
     }
 
     /*Desktop*/
     @media only screen and (min-width: 1024px){
-    	
+    	max-width: 60%;
     }
 
 }
@@ -85,25 +100,16 @@
 .container-game-info-txt{
 	text-transform: uppercase;
 	text-align: center;
-	/*MEDIA QUERIES*/
-    /*Tablet*/
-    @media only screen and (min-width: 768px) and (max-width: 1023px){
-    	
-    }
-
-    /*Desktop*/
-    @media only screen and (min-width: 1024px){
-    	
-    }
 }
 
 .container-game-info-grphx{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	width: 100%;
-	height: auto;
-	margin: 0 1rem;
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: 0 1rem;
 	//margin: auto 1rem auto 1rem;
 	/*MEDIA QUERIES*/
     /*Tablet*/
@@ -117,13 +123,15 @@
     }
 }
 .container-game-info-grphx-btn-left{
-	width: 0.75rem;
-	height: 0.75rem;
-	margin: 0 2rem 0 0;
-	background-image: url(../img/btn_izq.svg);
-	background-size: 55% 55%;
-	background-repeat: no-repeat;
-	background-position: center;
+	width: 0.5rem;
+	height: 0.5rem;
+    position: absolute;
+    left: .2rem;
+    bottom: .5rem;
+    background-image: url(../img/btn_izq.svg);
+    background-size: 55% 55%;
+    background-repeat: no-repeat;
+    background-position: center;
 	/*MEDIA QUERIES*/
     /*Tablet*/
     @media only screen and (min-width: 768px) and (max-width: 1023px){
@@ -140,34 +148,37 @@
     }
 }
 .container-game-info-grphx-btn-right{
-	width: 0.75rem;
-	height: 0.75rem;
-	margin: 0 0 0 2rem;
-	background-image: url(../img/btn_der.svg);
-	background-size: 55% 55%;
-	background-repeat: no-repeat;
-	background-position: center;
+	width: 0.5rem;
+	height: 0.5rem;
+	//margin: 0 0 0 2rem;
+    position: absolute;
+    right: .2rem;
+    bottom: .5rem;
+    background-image: url(../img/btn_der.svg);
+    background-size: 55% 55%;
+    background-repeat: no-repeat;
+    background-position: center;
 	/*MEDIA QUERIES*/
     /*Tablet*/
     @media only screen and (min-width: 768px) and (max-width: 1023px){
     	width: 3.75rem;
     	height: 3.75rem;
-    	/*margin: 0 1rem 1rem 5rem;*/
     }
 
     /*Desktop*/
     @media only screen and (min-width: 1024px){
     	width: 3.75rem;
-      height: 3.75rem;
-		/*margin: 0 1rem 1rem 5rem;*/
-	}
+        height: 3.75rem;
+  }
 }
 
-.container-game-info-grphx-reload{
-    width: 0.75rem;
-    height: 0.75rem;
-    margin: 0 0 0 2rem;
-    background-image: url(../img/btn_der.svg);
+.container-game-info-grphx-btn-reload{
+    width: 0.5rem;
+    height: 0.5rem;
+    position: absolute;
+    right: .2rem;
+    bottom: .5rem;
+    background-image: url(../img/btn_reload.svg);
     background-size: 55% 55%;
     background-repeat: no-repeat;
     background-position: center;
@@ -182,38 +193,37 @@
     /*Desktop*/
     @media only screen and (min-width: 1024px){
         width: 3.75rem;
-      height: 3.75rem;
+        height: 3.75rem;
         /*margin: 0 1rem 1rem 5rem;*/
     }
 }
 
 .container-game-info-grphx-btn-camera{
-	width: 0.75rem;
-	height: 0.75rem;
-	margin: 0 0 0 2rem;
-	//height: auto;
+	width: 0.5rem;
+	height: 0.5rem;
+    position: absolute;
+        right: .2rem;
+        bottom: .5rem;
 	background-image: url(../img/btn_camara.svg);
-	background-size: contain;
 	background-repeat: no-repeat;
+    background-size: 55% 55%;
+    background-position: center;
 	/*MEDIA QUERIES*/
     /*Tablet*/
     @media only screen and (min-width: 768px) and (max-width: 1023px){
     	width: 3.75rem;
     	height: 3.75rem;
-    	//margin: 1rem;
     }
-
     /*Desktop*/
     @media only screen and (min-width: 1024px){
     	width: 3.75rem;
     	height: 3.75rem;
-    	//margin: 1rem;
     }
 }
 
 .container-game-info-grphx-anim{
 	width: 10rem;
-	height: 5rem;
+	height: 4rem;
 	//margin: .2rem;
 	//height: auto;
 	//background-image: url(../img/step1.svg);
@@ -221,9 +231,8 @@
 	/*MEDIA QUERIES*/
     /*Tablet*/
     @media only screen and (min-width: 768px) and (max-width: 1023px){
-    	/*width: 15rem;
-    	height: 9.75rem;
-    	margin: 1rem;*/
+    	width: 15rem;
+        height: 7.5rem;
     }
 
     /*Desktop*/
@@ -235,7 +244,7 @@
 
 .anim-img{
     width: 10rem;
-    height: 5rem;
+    height: 3rem;
     text-align: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -249,26 +258,5 @@
     @media only screen and (min-width: 1024px){
         width: 15rem;
         height: 7.5rem;
-    }
-}
-.container-game-info-grphx-camera{
-	background-image: url(../img/btn_camara.svg);
-	background-size: 55% 55%;
-	background-repeat: no-repeat;
-	background-position: center;
-    width: 0.75rem;
-    height: 0.75rem;
-    margin: 0 0 0 2rem;
-    /*MEDIA QUERIES*/
-    /*Tablet*/
-    @media only screen and (min-width: 768px) and (max-width: 1023px){
-        width: 3.75rem;
-        height: 3.75rem;
-    }
-
-    /*Desktop*/
-    @media only screen and (min-width: 1024px){
-        width: 3.75rem;
-        height: 3.75rem;
     }
 }

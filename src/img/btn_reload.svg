@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="51px" height="41px" viewBox="0 0 51 41" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.6.1 (26313) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group" transform="translate(-2.000000, -2.000000)">
+            <path d="M41,23.5 C41,13.8350169 33.1649831,6 23.5,6 C13.8350169,6 6,13.8350169 6,23.5 C6,33.1649831 13.8350169,41 23.5,41 L23.5,41" id="Oval-1" stroke="#FFFFFF" stroke-width="7" transform="translate(23.500000, 23.500000) rotate(-336.000000) translate(-23.500000, -23.500000) "></path>
+            <path d="M47.3504622,29.515996 C47.3775887,28.4788039 47.0047807,27.4307896 46.2266296,26.6249907 L37.7031612,17.7986807 C36.1696569,16.2106905 33.6308894,16.1597655 32.0417678,17.6943624 C30.4558797,19.2258367 30.4108632,21.7637374 31.9484428,23.3559477 L37.9375014,29.5577994 L32.041033,35.6637711 C30.501081,37.2584381 30.5471777,39.7887492 32.1362993,41.3233461 C33.7221874,42.8548204 36.259244,42.8121381 37.7957514,41.2210381 L46.228571,32.4885977 C47.0287165,31.6600229 47.4006684,30.5788475 47.3504622,29.515996 Z" id="Combined-Shape" fill="#FFFFFF" transform="translate(39.089085, 29.509308) rotate(-256.000000) translate(-39.089085, -29.509308) "></path>
+            <circle id="Oval-1" fill="#FFFFFF" cx="16.5" cy="39.5" r="3.5"></circle>
+        </g>
+    </g>
+</svg>
