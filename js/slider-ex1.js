@@ -1,23 +1,13 @@
 $(document).ready(function() {
-	$('#slide-0').show();
-	$('.container-txt-0').show();
-	
-	var actualSlideStart = $('.slides li:visible');
-	//si prevSlider no existe, iremos a la página de selección de ejercicio
-	if (actualSlideStart.data('slide')=='0') {
-		$('#btn-prev').hide();
-		$('#btn-go-index').show();
-	}
+	$('#slide-1-0').show();
+	$('.container-txt-1-0').show();
 	
 	function nextSlider(){
-		$('#btn-go-index').hide();
-		$('#btn-prev').show();
-
 		var actualSlide = $('.slides li:visible');
 		var nextSlide = actualSlide.next();
 
 		if (nextSlide.length == 0) {
-			nextSlide = $('#slide-0');//cambiarlo a html de selección de juego
+			nextSlide = $('#slide-1-0');//cambiarlo a html de selección de juego
 		}
 		//si estamos en las slides 1, 2, 3 o 4 mostramos breadcrumbs animados
 		if (nextSlide.data('slide')=='1'|| nextSlide.data('slide')=='2'||nextSlide.data('slide')=='3'||nextSlide.data('slide')=='4')
@@ -29,8 +19,8 @@ $(document).ready(function() {
 			$('#rum-'+actualSlide.data('slide')).css('visibility','hidden');
 			$('#rum-'+nextSlide.data('slide')).css('visibility','visible');
 			
-			$('.container-txt-'+actualSlide.data('slide')).hide();
-			$('.container-txt-'+nextSlide.data('slide')).show();
+			$('.container-txt-1-'+actualSlide.data('slide')).hide();
+			$('.container-txt-1-'+nextSlide.data('slide')).show();
 			
 			//si estamos en las slides 1, 2 o 3, mostramos animación de fichas
 			if (nextSlide.data('slide')!='4')
@@ -45,25 +35,25 @@ $(document).ready(function() {
 				$('#btn-cam').show();
 			}
 
-			$('#rumble-ok').hide();
+			$('#rumble-ok-ex-1').hide();
 		}
 		else if(nextSlide.data('slide')=='5') //si estamos en slide 5 de rumble saludando
 		{
-			$('.container-txt-'+actualSlide.data('slide')).hide();
-			$('.container-txt-'+nextSlide.data('slide')).show();
+			$('.container-txt-1-'+actualSlide.data('slide')).hide();
+			$('.container-txt-1-'+nextSlide.data('slide')).show();
 			$('#btn-prev').hide();
 			$('#btn-cam').hide();
 			$('#btn-next').show();
-			$('#rumble-ok').show();
+			$('#rumble-ok-ex-1').show();
+
 		}
 		else if(nextSlide.data('slide')=='6') //si estamos en slide 6 mostraremos botón volver a empezar
 		{
-			$('#rumble-ok').hide();
+			$('#rumble-ok-ex-1').hide();
 
-			$('.container-txt-'+actualSlide.data('slide')).hide();
-			$('.container-txt-'+nextSlide.data('slide')).show();
+			$('.container-txt-1-'+actualSlide.data('slide')).hide();
+			$('.container-txt-1-'+nextSlide.data('slide')).show();
 			$('#btn-next').hide();
-			$('#btn-prev').hide();
 			$('#btn-reload').show();
 		}
 
@@ -74,10 +64,9 @@ $(document).ready(function() {
 	function prevSlider(){
 		var actualSlide = $('.slides li:visible');
 		var prevSlide = actualSlide.prev();
-
-		if (prevSlide.data('slide')=='0') {
-			$('#btn-prev').hide();
-			$('#btn-go-index').show();
+		
+		if (prevSlide.length == 0) {
+			prevSlide = $('#slide-1-6');//cambiarlo a página de selección de ejercicios
 		}
 
 		if (actualSlide.data('slide')=='1'|| actualSlide.data('slide')=='2'||actualSlide.data('slide')=='3'||actualSlide.data('slide')=='4')
@@ -86,11 +75,11 @@ $(document).ready(function() {
 			$('#nav-'+actualSlide.data('slide')).addClass('progress-bar-inactive');
 			$('#num-'+actualSlide.data('slide')).removeClass('progress-num-active');
 			$('#num-'+actualSlide.data('slide')).addClass('progress-num-inactive');
-			$('.container-txt-'+actualSlide.data('slide')).hide();
-			$('.container-txt-'+prevSlide.data('slide')).show();
+			$('.container-txt-1-'+actualSlide.data('slide')).hide();
+			$('.container-txt-1-'+prevSlide.data('slide')).show();
 			$('#rum-'+actualSlide.data('slide')).css('visibility','hidden');
 			$('#rum-'+prevSlide.data('slide')).css('visibility','visible');
-
+		
 			//si estamos en las slides 1, 2 o 3, mostramos animación de fichas
 			if (actualSlide.data('slide')!='1')
 			{
@@ -116,7 +105,9 @@ $(document).ready(function() {
 	$('#btn-next').click(nextSlider);
 	$('#btn-prev').click(prevSlider);
 	$('#btn-cam').click(nextSlider);
+	// $('#btn-reload').click(funtion(){
 
+	// });
 
 });
 
