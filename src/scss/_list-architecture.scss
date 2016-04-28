@@ -1,0 +1,97 @@
+.list-background {
+    background-image: url(../img/list_bg.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.list-main-container {
+    text-align: center;
+    margin-top: 20%;
+    /*MEDIA QUERIES*/
+    /*Tablet*/
+    @media only screen and (min-width: 768px) and (max-width: 1023px){
+        margin-top: 5%;
+    }
+
+    /*Desktop*/
+    @media only screen and (min-width: 1024px){
+        margin-top: 4%;
+    }
+      
+}
+
+.list-btn {
+    width: 210px;
+    background-color: white;
+    border-radius: 20px;
+    padding-bottom: 6px;
+    border: 5px solid white;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    box-shadow: 0px 2px 2px 0px rgba(194,192,194,1);
+    position: relative;
+    top: 0px;
+}
+
+.list-btn:active{
+    top: 1px;
+}
+
+.list-btn-img {
+    width: 100%;
+    height: 140px;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all 0.3s ease 0s;
+}
+
+.list-btn-wrapper {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    margin: .8rem;
+    margin-top: 2rem;
+
+}  
+
+.list-btn-wrapper-group{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+
+}
+
+.list-btn-subt {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.list-btn-subt2 {
+    margin: 2.4rem auto auto auto;
+}
+
+.img-primero {
+    background-image: url(../img/first-bg.png);
+}
+.img-primero:hover {
+    background-image: url(../img/first-bg.gif);
+}
+
+.img-ejer1 {
+    background-image: url(../img/ejer1-bg.png);
+}
+.img-ejer1:hover {
+    background-image: url(../img/ejer1-bg-animated.gif);
+}
+
+.img-ejer2 {
+    background-image: url(../img/second-bg.gif)
+}
+.img-ejer2:hover {
+    background-image: url(../img/second-bg-animated.gif)
+}
