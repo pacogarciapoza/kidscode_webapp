@@ -5,9 +5,10 @@
   display: none;
 }
 
+//EJERCICIO 1
 //cargamos background segun el slide en el que estamos
 @for $i from 0 through 6 {
-  #slide-#{$i} {
+  #slide-1-#{$i} {
     background-image: url(../img/ex1-#{$i}_desktop.svg); 
     background-size: cover;
     background-repeat: no-repeat;
@@ -18,11 +19,11 @@
 
 //cargamos texto segun el slide en el que estamos buscando en la lista de textos
 @for $i from 0 through 6 {
-  .container-txt-#{$i}{
+  .container-txt-1-#{$i}{
     display: none;
   }
 
-  .container-txt-#{$i}:before{
+  .container-txt-1-#{$i}:before{
     content: nth($listTextGame1, $i+1);
     text-transform: uppercase;
   }
@@ -35,6 +36,39 @@
     display: none;
   }
 }
+
+//EJERCICIO 2
+//cargamos background segun el slide en el que estamos
+@for $i from 0 through 8 {
+  #slide-2-#{$i} {
+    background-image: url(../img/ex2-#{$i}_desktop.svg); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+}
+
+//cargamos texto segun el slide en el que estamos buscando en la lista de textos
+@for $i from 0 through 8 {
+  .container-txt-2-#{$i}{
+    display: none;
+  }
+
+  .container-txt-2-#{$i}:before{
+    content: nth($listTextGame2, $i+1);
+    text-transform: uppercase;
+  }
+}
+
+//cargamos animaciones segun el slide q estemos
+@for $i from 1 through 5 {
+  .anim2-#{$i}{
+    background-image: nth($listAnimGame2, $i);
+    display: none;
+  }
+}
+
 
 
 

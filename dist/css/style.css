@@ -4,94 +4,94 @@
   height: 100vh;
   display: none; }
 
-#slide-0 {
+#slide-1-0 {
   background-image: url(../img/ex1-0_desktop.svg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center; }
 
-#slide-1 {
+#slide-1-1 {
   background-image: url(../img/ex1-1_desktop.svg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center; }
 
-#slide-2 {
+#slide-1-2 {
   background-image: url(../img/ex1-2_desktop.svg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center; }
 
-#slide-3 {
+#slide-1-3 {
   background-image: url(../img/ex1-3_desktop.svg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center; }
 
-#slide-4 {
+#slide-1-4 {
   background-image: url(../img/ex1-4_desktop.svg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center; }
 
-#slide-5 {
+#slide-1-5 {
   background-image: url(../img/ex1-5_desktop.svg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center; }
 
-#slide-6 {
+#slide-1-6 {
   background-image: url(../img/ex1-6_desktop.svg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center; }
 
-.container-txt-0 {
+.container-txt-1-0 {
   display: none; }
 
-.container-txt-0:before {
+.container-txt-1-0:before {
   content: "¡Hola kid! Queremos presentarte a rumble, pero ¡Es un dormilón! ¿Nos ayudas a despertarle con este juego?";
   text-transform: uppercase; }
 
-.container-txt-1 {
+.container-txt-1-1 {
   display: none; }
 
-.container-txt-1:before {
-  content: "empieza con la ficha de rumble";
+.container-txt-1-1:before {
+  content: "empieza con la ficha de inicio rumble";
   text-transform: uppercase; }
 
-.container-txt-2 {
+.container-txt-1-2 {
   display: none; }
 
-.container-txt-2:before {
+.container-txt-1-2:before {
   content: "junta la ficha de rumble con una de movimiento";
   text-transform: uppercase; }
 
-.container-txt-3 {
+.container-txt-1-3 {
   display: none; }
 
-.container-txt-3:before {
+.container-txt-1-3:before {
   content: "termina con la ficha de cierre";
   text-transform: uppercase; }
 
-.container-txt-4 {
+.container-txt-1-4 {
   display: none; }
 
-.container-txt-4:before {
+.container-txt-1-4:before {
   content: "¡Muy bien kid! sólo queda hacer una foto de las fichas con tu tablet o móvil";
   text-transform: uppercase; }
 
-.container-txt-5 {
+.container-txt-1-5 {
   display: none; }
 
-.container-txt-5:before {
+.container-txt-1-5:before {
   content: "¡lo conseguiste kid! ¡despertaste a rumble y está muy feliz de conocerte! ¡grandes aventuras os esperan!";
   text-transform: uppercase; }
 
-.container-txt-6 {
+.container-txt-1-6 {
   display: none; }
 
-.container-txt-6:before {
+.container-txt-1-6:before {
   content: "¡ups! rumble sigue durmiendo. vamos a revisar que las fichas estén bien colocadas";
   text-transform: uppercase; }
 
@@ -104,6 +104,143 @@
   display: none; }
 
 .anim1-3 {
+  background-image: url(../img/step3.svg);
+  display: none; }
+
+#slide-2-0 {
+  background-image: url(../img/ex2-0_desktop.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center; }
+
+#slide-2-1 {
+  background-image: url(../img/ex2-1_desktop.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center; }
+
+#slide-2-2 {
+  background-image: url(../img/ex2-2_desktop.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center; }
+
+#slide-2-3 {
+  background-image: url(../img/ex2-3_desktop.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center; }
+
+#slide-2-4 {
+  background-image: url(../img/ex2-4_desktop.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center; }
+
+#slide-2-5 {
+  background-image: url(../img/ex2-5_desktop.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center; }
+
+#slide-2-6 {
+  background-image: url(../img/ex2-6_desktop.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center; }
+
+#slide-2-7 {
+  background-image: url(../img/ex2-7_desktop.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center; }
+
+#slide-2-8 {
+  background-image: url(../img/ex2-8_desktop.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center; }
+
+.container-txt-2-0 {
+  display: none; }
+
+.container-txt-2-0:before {
+  content: "¡hola kid! rumble ha perdido su sombrero de aventurero, ¿nos ayudas a encontrarlo?";
+  text-transform: uppercase; }
+
+.container-txt-2-1 {
+  display: none; }
+
+.container-txt-2-1:before {
+  content: "empieza con la ficha de inicio rumble";
+  text-transform: uppercase; }
+
+.container-txt-2-2 {
+  display: none; }
+
+.container-txt-2-2:before {
+  content: "junta la ficha de rumble con una de movimiento";
+  text-transform: uppercase; }
+
+.container-txt-2-3 {
+  display: none; }
+
+.container-txt-2-3:before {
+  content: "añade la ficha de giro a la derecha";
+  text-transform: uppercase; }
+
+.container-txt-2-4 {
+  display: none; }
+
+.container-txt-2-4:before {
+  content: "añade la ficha seguir hacia adelante";
+  text-transform: uppercase; }
+
+.container-txt-2-5 {
+  display: none; }
+
+.container-txt-2-5:before {
+  content: "termina con la ficha de cierre";
+  text-transform: uppercase; }
+
+.container-txt-2-6 {
+  display: none; }
+
+.container-txt-2-6:before {
+  content: "¡Muy bien kid! sólo queda hacer una foto de las fichas con tu tablet o móvil";
+  text-transform: uppercase; }
+
+.container-txt-2-7 {
+  display: none; }
+
+.container-txt-2-7:before {
+  content: "¡lo conseguiste kid! ¡rumble y tu sois unos grandes aventureros!";
+  text-transform: uppercase; }
+
+.container-txt-2-8 {
+  display: none; }
+
+.container-txt-2-8:before {
+  content: "¡ups! rumble no ha encontrado su sombrero. vamos a revisar que las fichas estén bien colocadas";
+  text-transform: uppercase; }
+
+.anim2-1 {
+  background-image: url(../img/step1.svg);
+  display: none; }
+
+.anim2-2 {
+  background-image: url(../img/step2.svg);
+  display: none; }
+
+.anim2-3 {
+  background-image: url(../img/step2.svg);
+  display: none; }
+
+.anim2-4 {
+  background-image: url(../img/step2.svg);
+  display: none; }
+
+.anim2-5 {
   background-image: url(../img/step3.svg);
   display: none; }
 
@@ -781,7 +918,7 @@ h6 {
       width: 18rem;
       height: auto; } }
 
-#rumble-ok {
+#rumble-ok-ex-1 {
   position: absolute;
   top: .5rem;
   left: 10rem;
@@ -790,13 +927,30 @@ h6 {
   /*Tablet*/
   /*Desktop*/ }
   @media only screen and (min-width: 768px) and (max-width: 1023px) {
-    #rumble-ok {
+    #rumble-ok-ex-1 {
       top: .5rem;
       left: 18rem; } }
   @media only screen and (min-width: 1024px) {
-    #rumble-ok {
+    #rumble-ok-ex-1 {
       top: .5rem;
       left: 18rem; } }
+
+#rumble-ok-ex-2 {
+  position: absolute;
+  top: .5rem;
+  right: 10rem;
+  display: none;
+  /*MEDIA QUERIES*/
+  /*Tablet*/
+  /*Desktop*/ }
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    #rumble-ok-ex-2 {
+      top: .5rem;
+      right: 18rem; } }
+  @media only screen and (min-width: 1024px) {
+    #rumble-ok-ex-2 {
+      top: .5rem;
+      right: 18rem; } }
 
 .content-progress {
   display: -webkit-box;
@@ -929,7 +1083,7 @@ h6 {
           flex-direction: row; }
 
 .progress-rumble-img {
-  background-image: url(../img/rumble_ficha.png);
+  background-image: url(../img/rumble_breadcrumb.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
