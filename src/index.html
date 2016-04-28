@@ -1,35 +1,76 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>KidsCode Despierta a Rumble!</title>
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
-  <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <meta charset="UTF-8">
+ <title>KidsCode | Elige tu aventura</title>
+    <!--Styles-->
+    <link rel=stylesheet href="css/style.css" type="text/css">
+    <!--Movile viewport-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Google Fonts-->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,800,300|Montserrat:400,700|Montserrat+Alternates:400,700|Source+Sans+Pro:400,300,700,900' rel='stylesheet' type='text/css'>
+    
+    <!--Google Analytics-->
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-75956014-1', 'auto');
+  ga('send', 'pageview');
+
+  </script>
+    
 </head>
-<body>
+<body class="list-background">
 
-  <section>
-    <div class="container exer1-0">
-      <div class="container-nav">
-        <a href="http://silviajboo.github.io/kidscode/">
-          <div class="container-nav-btn-cancel"></div>
-        </a>  
-      </div>
-      <div class="container-game-info">
-        <div class="container-game-info-txt">
-          <h2 class="color-title-green h2-t1">despierta a rumble</h2><h2 class="h2-t1">¡Hola kid! Queremos presentarte a rumble, pero ¿Es un dormilón! ¿Nos ayudas a despertarle con este juego?</h2>
-        </div>
-        <div class="container-game-info-grphx-btn">
-          <a href="exercise1-1.html">
-            <img class="btn-rnd-red-act btn-ok">
-          </a></div> 
-        </div>
-      </div>
+    <div class="container-nav">
+      <a href="http://silviajboo.github.io/kidscode/">
+        <div class="container-nav-btn-cancel btn-rnd-act color-bg-pink-drk "></div>
+      </a>  
+    </div>
 
+    <div class="list-main-container">
+        <header>
+            <h1>Elige tu aventura</h1>
+        </header>
+        
+        <div class="list-btn-wrapper-group">
+        <section class="list-btn-wrapper">
+            <a href="pdf/fichas_v1.pdf" target="_blank">
+                <article class="list-btn">
+                    <div class="list-btn-img img-primero"></div>
+                    <h3>Primero...</h3>
+                </article>
+            
+                <div class="btn-dwnld list-btn-subt uppercase">imprimir fichas</div>
+            </a>    
+        </section>
+        
+        <section class="list-btn-wrapper">
+            <a href="exercise1.html">
+            <article class="list-btn">
+                <div class="list-btn-img img-ejer1" src="img/button_cap_1.svg"></div>
+                <h3>Capítulo 1</h3>
+            </article>
+                <h4 class="list-btn-subt2 uppercase">¡Despierta a Rumble!</h4>    
+            </a>
+        </section>
+        
+        <section class="list-btn-wrapper">
+             <a href="exercise2.html">
+            <article class="list-btn">
+                <div class="list-btn-img img-ejer2"></div>
+                <h3>Capítulo 2</h3>
+            </article>
+            
+                <h4 class="list-btn-subt2 uppercase">¡A por mi sombrero!</h4>    
+            </a>
+        </section>
+    </div>
+        
+    </div>
 
-    </section>
-    <script src="../js/orientation.js"></script>
-  </body>
-  </html>
+</body>
+</html>

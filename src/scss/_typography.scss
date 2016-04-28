@@ -12,7 +12,7 @@ body{
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     line-height: 1.5rem;
-    height: 100%;
+    margin: 0;
 }
 a{
     font-size: 1rem;
@@ -20,6 +20,7 @@ a{
     margin-top: 0.75rem;
     margin-bottom: 0.75rem;
     color: #1794cf;
+    text-decoration: none;
 }
 p{
     font-size: 1rem;
@@ -121,20 +122,4 @@ h6{
 }
 
 
-//ALINEAR TEXTO
-.txt-algn-center{
-    text-align: center;
-}
-//COLUMNAS DE TEXTO
-.two-columns{
-    -webkit-column-count: 2;
-    -moz-column-count: 2;
-    column-count: 2;
-    padding: 0 20px 0 20px;
-}
-.three-columns{
-    -webkit-column-count: 3;
-    -moz-column-count: 3;
-    column-count: 3;
-    padding: 0 20px 0 20px;
-}
+

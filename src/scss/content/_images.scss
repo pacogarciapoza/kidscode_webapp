@@ -1,46 +1,56 @@
 .rumble-hello {
-    width: 25%;
-    height: 25%;
-    //margin: 10%;
-    //padding: 10%;
-    //top: 40%;
-    //left: 10%;
-    display:flex;
-    align-items: flex-start;
-    //position: absolute;
+    width: 8rem;
+    height: auto;
 
     /*MEDIA QUERIES*/
     /*Tablet*/
     @media only screen and (min-width: 768px) and (max-width: 1023px){
-    	width: auto;
-    	height: auto;
+    	width: 18rem;
+        height: auto;
     }
 
     /*Desktop*/
     @media only screen and (min-width: 1024px){
-    	width: auto;
-    	height: auto;
+    	width: 18rem;
+        height: auto;
     }
 }
 
-.rumble-next{
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;  
-	width: 100%;
-}
-
-.next{
-	margin-top: 40%;
-	margin-bottom: 40%;
-	/*MEDIA QUERIES*/
+#rumble-ok-ex-1{
+    position: absolute;
+        top: .5rem;
+        left: 10rem;
+    display: none;
+    /*MEDIA QUERIES*/
     /*Tablet*/
     @media only screen and (min-width: 768px) and (max-width: 1023px){
-    	margin-top: 90%;
+        top: .5rem;
+        left: 18rem;
     }
 
     /*Desktop*/
     @media only screen and (min-width: 1024px){
-    	margin-top: 90%;
+        top: .5rem;
+        left: 18rem;
     }
 }
+
+#rumble-ok-ex-2{
+    position: absolute;
+        top: .5rem;
+        right: 10rem;
+    display: none;
+    /*MEDIA QUERIES*/
+    /*Tablet*/
+    @media only screen and (min-width: 768px) and (max-width: 1023px){
+        top: .5rem;
+        right: 18rem;
+    }
+
+    /*Desktop*/
+    @media only screen and (min-width: 1024px){
+        top: .5rem;
+        right: 18rem;
+    }
+}
+

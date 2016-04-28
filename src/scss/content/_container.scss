@@ -1,0 +1,263 @@
+.container {
+	//outline: 2px solid red;
+	outline-offset: -2px;
+	position: relative;
+	height: 100vh;
+	width: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.container ul{
+    margin: 0;
+    padding: 0;
+}
+
+.container-nav {
+	padding: .5rem;
+	display: flex;
+	flex-direction: row;
+    position: absolute;
+        top: 0;
+    width: 100%;
+    box-sizing: border-box;
+
+    /*MEDIA QUERIES*/
+    /*Tablet*/
+    @media only screen and (min-width: 768px) and (max-width: 1023px){
+        padding: 2rem;
+    }
+
+    /*Desktop*/
+    @media only screen and (min-width: 1024px){
+        padding: 2rem;
+    }
+}
+
+.container-nav-btn-cancel{
+    position: absolute;
+        top: .5rem;
+        right: 0rem;
+    width: 0.05rem;
+    height: 0.05rem;
+    margin: 0 1rem 0 0;
+    background-image: url(../img/btn_cancel.svg);
+    background-size: 55% 55%;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    /*MEDIA QUERIES*/
+    /*Tablet*/
+    @media only screen and (min-width: 768px) and (max-width: 1023px){
+        top: 2rem;
+        right: 0rem;
+        width: 0.75rem;
+        height: 0.75rem;
+        margin: 0 4rem 0 0;
+    }
+
+    /*Desktop*/
+    @media only screen and (min-width: 1024px){
+        top: 2rem;
+        right: 0rem;
+        width: 0.75rem;
+        height: 0.75rem;
+        margin: 0 4rem 0 0;
+    }
+}
+
+.container-game-info {
+	//background-color: gold;
+	margin: 0 auto;
+	padding: .5rem;
+	position: absolute;
+	bottom: 2rem;
+	left: 0;
+	right: 0;
+	max-width: 80%;
+
+	display: flex;
+	flex-wrap: wrap;
+	align-self: center;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(255, 255, 255, .8);
+	border: .5rem solid #33bb44;
+	border-radius: 1rem;
+	/*MEDIA QUERIES*/
+    /*Tablet*/
+    @media only screen and (min-width: 768px) and (max-width: 1023px){
+    	max-width: 60%;
+    }
+
+    /*Desktop*/
+    @media only screen and (min-width: 1024px){
+    	max-width: 60%;
+    }
+
+}
+
+.container-game-info-txt{
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.container-game-info-grphx{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: 0 1rem;
+	//margin: auto 1rem auto 1rem;
+	/*MEDIA QUERIES*/
+    /*Tablet*/
+    @media only screen and (min-width: 768px) and (max-width: 1023px){
+    	//margin: auto 2rem auto 2rem;
+    }
+
+    /*Desktop*/
+    @media only screen and (min-width: 1024px){
+    	//margin: auto 2rem auto 2rem;
+    }
+}
+.container-game-info-grphx-btn-left{
+	width: 0.5rem;
+	height: 0.5rem;
+    position: absolute;
+    left: .2rem;
+    bottom: .5rem;
+    background-image: url(../img/btn_izq.svg);
+    background-size: 55% 55%;
+    background-repeat: no-repeat;
+    background-position: center;
+	/*MEDIA QUERIES*/
+    /*Tablet*/
+    @media only screen and (min-width: 768px) and (max-width: 1023px){
+    	width: 3.75rem;
+    	height: 3.75rem;
+    	/*margin: 0 5rem 1rem 1rem;*/
+    }
+
+    /*Desktop*/
+    @media only screen and (min-width: 1024px){
+    	width: 3.75rem;
+    	height: 3.75rem;
+    	/*margin: 0 5rem 1rem 1rem;*/
+    }
+}
+.container-game-info-grphx-btn-right{
+	width: 0.5rem;
+	height: 0.5rem;
+	//margin: 0 0 0 2rem;
+    position: absolute;
+    right: .2rem;
+    bottom: .5rem;
+    background-image: url(../img/btn_der.svg);
+    background-size: 55% 55%;
+    background-repeat: no-repeat;
+    background-position: center;
+	/*MEDIA QUERIES*/
+    /*Tablet*/
+    @media only screen and (min-width: 768px) and (max-width: 1023px){
+    	width: 3.75rem;
+    	height: 3.75rem;
+    }
+
+    /*Desktop*/
+    @media only screen and (min-width: 1024px){
+    	width: 3.75rem;
+        height: 3.75rem;
+  }
+}
+
+.container-game-info-grphx-btn-reload{
+    width: 0.5rem;
+    height: 0.5rem;
+    position: absolute;
+    right: .2rem;
+    bottom: .5rem;
+    background-image: url(../img/btn_reload.svg);
+    background-size: 55% 55%;
+    background-repeat: no-repeat;
+    background-position: center;
+    /*MEDIA QUERIES*/
+    /*Tablet*/
+    @media only screen and (min-width: 768px) and (max-width: 1023px){
+        width: 3.75rem;
+        height: 3.75rem;
+        /*margin: 0 1rem 1rem 5rem;*/
+    }
+
+    /*Desktop*/
+    @media only screen and (min-width: 1024px){
+        width: 3.75rem;
+        height: 3.75rem;
+        /*margin: 0 1rem 1rem 5rem;*/
+    }
+}
+
+.container-game-info-grphx-btn-camera{
+	width: 0.5rem;
+	height: 0.5rem;
+    position: absolute;
+        right: .2rem;
+        bottom: .5rem;
+	background-image: url(../img/btn_camara.svg);
+	background-repeat: no-repeat;
+    background-size: 55% 55%;
+    background-position: center;
+	/*MEDIA QUERIES*/
+    /*Tablet*/
+    @media only screen and (min-width: 768px) and (max-width: 1023px){
+    	width: 3.75rem;
+    	height: 3.75rem;
+    }
+    /*Desktop*/
+    @media only screen and (min-width: 1024px){
+    	width: 3.75rem;
+    	height: 3.75rem;
+    }
+}
+
+.container-game-info-grphx-anim{
+	width: 10rem;
+	height: 4rem;
+	//margin: .2rem;
+	//height: auto;
+	//background-image: url(../img/step1.svg);
+	
+	/*MEDIA QUERIES*/
+    /*Tablet*/
+    @media only screen and (min-width: 768px) and (max-width: 1023px){
+    	width: 15rem;
+        height: 7.5rem;
+    }
+
+    /*Desktop*/
+    @media only screen and (min-width: 1024px){
+    	width: 15rem;
+    	height: 7.5rem;
+    }
+}
+
+.anim-img{
+    width: 10rem;
+    height: 3rem;
+    text-align: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    /*Tablet*/
+    @media only screen and (min-width: 768px){
+        width: 15rem;
+        height: 7.5rem;
+    }
+    /*Desktop*/
+    @media only screen and (min-width: 1024px){
+        width: 15rem;
+        height: 7.5rem;
+    }
+}
