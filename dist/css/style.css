@@ -111,55 +111,55 @@
   background-image: url(../img/ex2-0_desktop.svg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center center; }
+  background-position: top center; }
 
 #slide-2-1 {
   background-image: url(../img/ex2-1_desktop.svg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center center; }
+  background-position: top center; }
 
 #slide-2-2 {
   background-image: url(../img/ex2-2_desktop.svg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center center; }
+  background-position: top center; }
 
 #slide-2-3 {
   background-image: url(../img/ex2-3_desktop.svg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center center; }
+  background-position: top center; }
 
 #slide-2-4 {
   background-image: url(../img/ex2-4_desktop.svg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center center; }
+  background-position: top center; }
 
 #slide-2-5 {
   background-image: url(../img/ex2-5_desktop.svg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center center; }
+  background-position: top center; }
 
 #slide-2-6 {
   background-image: url(../img/ex2-6_desktop.svg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center center; }
+  background-position: top center; }
 
 #slide-2-7 {
   background-image: url(../img/ex2-7_desktop.svg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center center; }
+  background-position: top center; }
 
 #slide-2-8 {
   background-image: url(../img/ex2-8_desktop.svg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center center; }
+  background-position: top center; }
 
 .container-txt-2-0 {
   display: none; }
@@ -544,7 +544,7 @@
   color: #ffffff;
   font-weight: 400;
   text-decoration: none;
-  background-color: #d93560;
+  background-color: #0097e8;
   cursor: pointer;
   font-size: 16px;
   border-radius: 10px;
@@ -553,7 +553,7 @@
   transition: all 0.3s ease 0s; }
 
 .btn-dwnld:hover {
-  background-color: #11bbcc;
+  background-color: #33bb44;
   box-shadow: #B9B7B7 0px 1px 1px; }
 
 .btn-rnd-act {
@@ -950,7 +950,7 @@ h6 {
       right: 18rem; } }
   @media only screen and (min-width: 1024px) {
     #rumble-ok-ex-2 {
-      top: .5rem;
+      top: 3rem;
       right: 18rem; } }
 
 .content-progress {
@@ -1109,7 +1109,9 @@ h6 {
   background-image: url(../img/list_bg.svg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover; }
+  background-size: cover;
+  width: auto;
+  height: 100vh; }
 
 .list-main-container {
   text-align: center;
