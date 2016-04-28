@@ -10,8 +10,8 @@
 		display:inline-block;
 		margin: 12px;
 		box-shadow:#B9B7B7 0px 3px 3px;
-		border: 5px solid #ffffff;
-		color:#ffffff;
+		border: 5px solid $primaryColorWhite;
+		color:$primaryColorWhite;
 		font-weight: 400;
 		text-decoration: none;
 		background-color: #0097e8;
@@ -29,8 +29,8 @@
 		display:inline-block;
 		margin: 12px;
 		box-shadow:#B9B7B7 0px 3px 3px;
-		border: 5px solid #ffffff;
-		color:#ffffff;
+		border: 5px solid $primaryColorWhite;
+		color:$primaryColorWhite;
 		font-weight: 400;
 		text-decoration: none;
 		background-color: #999999;
@@ -43,11 +43,11 @@
 		display:inline-block;
 		margin: 12px;
 		box-shadow:#B9B7B7 0px 3px 3px;
-		border: 5px solid #ffffff;
-		color:#ffffff;
+		border: 5px solid $primaryColorWhite;
+		color: $primaryColorWhite;
 		font-weight: 400;
 		text-decoration: none;
-		background-color: #d93560;
+		background-color: $secondaryColorBgBlue3;
 		cursor:pointer;
 		font-size:16px;
 		border-radius:10px;
@@ -56,13 +56,13 @@
 	}
 
 	&-dwnld:hover{
-		background-color: #11bbcc;
+		background-color: $primaryColorBgGreen;
 		box-shadow:#B9B7B7 0px 1px 1px;
 	}
 	&-rnd-act {
 		//display:inline-block;
 		box-shadow: #c1c1c1 0px 3px 3px;
-		border: 5px solid #ffffff;
+		border: 5px solid $primaryColorWhite;
 		font-weight: 400;
 		text-decoration: none;
 		font-size:1rem;
@@ -79,10 +79,10 @@
 	&-rnd-blue-act {
 		display:inline-block;
 		box-shadow:#c1c1c1 0px 3px 3px;
-		border: 5px solid #ffffff;
+		border: 5px solid $primaryColorWhite;
 		font-weight: 400;
 		text-decoration: none;
-		background-color: #0097e8;
+		background-color: $secondaryColorBgBlue3;
 		font-size:1rem;
 		border-radius:100%;
 		padding: 24px;
@@ -101,7 +101,7 @@
 		height: 0.75rem;
 		margin: 0 .5rem .5rem 2rem;
 		box-shadow:#c1c1c1 0px 3px 3px;
-		border: 5px solid #ffffff;
+		border: 5px solid $primaryColorWhite;
 		font-weight: 400;
 		text-decoration: none;
 		background-color: #d93560;
@@ -133,7 +133,7 @@
     &-rnd-green-act {
     	display:inline-block;
     	box-shadow:#c1c1c1 0px 3px 3px;
-    	border: 5px solid #ffffff;
+    	border: 5px solid $primaryColorWhite;
     	font-weight: 400;
     	text-decoration: none;
     	background-color: #33BB44;
@@ -167,7 +167,7 @@
 
 	&-round{
 		display:inline-block;
-		color: #ffffff;
+		color: $primaryColorWhite;
 		height:80px;
 		width: 70px;
 		font-weight: 700;
