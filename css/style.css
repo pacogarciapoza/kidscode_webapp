@@ -96,15 +96,15 @@
   text-transform: uppercase; }
 
 .anim1-1 {
-  background-image: url(../img/step1.svg);
+  background-image: url(../img/ex1-anim1.svg);
   display: none; }
 
 .anim1-2 {
-  background-image: url(../img/step2.svg);
+  background-image: url(../img/ex1-anim2.svg);
   display: none; }
 
 .anim1-3 {
-  background-image: url(../img/step3.svg);
+  background-image: url(../img/ex1-anim3.svg);
   display: none; }
 
 #slide-2-0 {
@@ -225,23 +225,23 @@
   text-transform: uppercase; }
 
 .anim2-1 {
-  background-image: url(../img/step1.svg);
+  background-image: url(../img/ex2-anim1.svg);
   display: none; }
 
 .anim2-2 {
-  background-image: url(../img/step2.svg);
+  background-image: url(../img/ex2-anim2.svg);
   display: none; }
 
 .anim2-3 {
-  background-image: url(../img/step2.svg);
+  background-image: url(../img/ex2-anim3.svg);
   display: none; }
 
 .anim2-4 {
-  background-image: url(../img/step2.svg);
+  background-image: url(../img/ex2-anim4.svg);
   display: none; }
 
 .anim2-5 {
-  background-image: url(../img/step3.svg);
+  background-image: url(../img/ex2-anim5.svg);
   display: none; }
 
 .container {
@@ -390,8 +390,8 @@
   /*Desktop*/ }
   @media only screen and (min-width: 768px) and (max-width: 1023px) {
     .container-game-info-grphx-btn-left {
-      width: 3.75rem;
-      height: 3.75rem;
+      width: 2.25rem;
+      height: 2.25rem;
       /*margin: 0 5rem 1rem 1rem;*/ } }
   @media only screen and (min-width: 1024px) {
     .container-game-info-grphx-btn-left {
@@ -414,8 +414,8 @@
   /*Desktop*/ }
   @media only screen and (min-width: 768px) and (max-width: 1023px) {
     .container-game-info-grphx-btn-right {
-      width: 3.75rem;
-      height: 3.75rem; } }
+      width: 2.25rem;
+      height: 2.25rem; } }
   @media only screen and (min-width: 1024px) {
     .container-game-info-grphx-btn-right {
       width: 3.75rem;
@@ -436,8 +436,8 @@
   /*Desktop*/ }
   @media only screen and (min-width: 768px) and (max-width: 1023px) {
     .container-game-info-grphx-btn-reload {
-      width: 3.75rem;
-      height: 3.75rem;
+      width: 2.25rem;
+      height: 2.25rem;
       /*margin: 0 1rem 1rem 5rem;*/ } }
   @media only screen and (min-width: 1024px) {
     .container-game-info-grphx-btn-reload {
@@ -460,31 +460,31 @@
   /*Desktop*/ }
   @media only screen and (min-width: 768px) and (max-width: 1023px) {
     .container-game-info-grphx-btn-camera {
-      width: 3.75rem;
-      height: 3.75rem; } }
+      width: 2.25rem;
+      height: 2.25rem; } }
   @media only screen and (min-width: 1024px) {
     .container-game-info-grphx-btn-camera {
       width: 3.75rem;
       height: 3.75rem; } }
 
 .container-game-info-grphx-anim {
-  width: 10rem;
+  width: 15rem;
   height: 4rem;
   /*MEDIA QUERIES*/
   /*Tablet*/
   /*Desktop*/ }
   @media only screen and (min-width: 768px) and (max-width: 1023px) {
     .container-game-info-grphx-anim {
-      width: 15rem;
+      width: 20rem;
       height: 7.5rem; } }
   @media only screen and (min-width: 1024px) {
     .container-game-info-grphx-anim {
-      width: 15rem;
-      height: 7.5rem; } }
+      width: 28rem;
+      height: 7rem; } }
 
 .anim-img {
-  width: 10rem;
-  height: 3rem;
+  width: 15rem;
+  height: 4rem;
   text-align: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -493,12 +493,12 @@
   /*Desktop*/ }
   @media only screen and (min-width: 768px) {
     .anim-img {
-      width: 15rem;
+      width: 20rem;
       height: 7.5rem; } }
   @media only screen and (min-width: 1024px) {
     .anim-img {
-      width: 15rem;
-      height: 7.5rem; } }
+      width: 28rem;
+      height: 7rem; } }
 
 /*BOTONES*/
 #btn-cam, #btn-reload, #btn-go-index {
