@@ -7,7 +7,24 @@
 // });
 
 $(document).ready(function() {
+	//iOS
 	switch (window.orientation) {  
+    case 0:  
+        // Portrait 
+        $('.container-alert').removeClass('closed');
+        break; 
+        
+    case 180: 
+        // Portrait (Upside-down)
+        $('.container-alert').removeClass('closed');
+        break; 
+    
+    default:
+		$('.container-alert').addClass('closed');
+	}
+
+	//android
+	switch (window.screen.orientation.angle) {  
     case 0:  
         // Portrait 
         $('.container-alert').removeClass('closed');
@@ -24,6 +41,23 @@ $(document).ready(function() {
 });
 
 $(window).bind("orientationchange",function(){
+	//iOS
+	switch (window.orientation) {  
+    case 0:  
+        // Portrait 
+        $('.container-alert').removeClass('closed');
+        break; 
+        
+    case 180: 
+        // Portrait (Upside-down)
+        $('.container-alert').removeClass('closed');
+        break; 
+    
+    default:
+		$('.container-alert').addClass('closed');
+	}
+
+	//android
 	switch (window.screen.orientation.angle) {  
     case 0:  
         // Portrait 
