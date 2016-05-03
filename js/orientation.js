@@ -63,13 +63,13 @@ $(window).bind("orientationchange",function(){
     case 0:  
         // Portrait 
         // $('.container-alert').removeClass('closed');
-        $(window).orientationchange();
+        $(window).screen.orientationchange();
         break; 
         
     case 180: 
         // Portrait (Upside-down)
         // $('.container-alert').removeClass('closed');
-        $(window).orientationchange();
+        $(window).screen.orientationchange();
         break; 
     
     default:
