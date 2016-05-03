@@ -10,16 +10,16 @@ $(document).ready(function() {
 	switch (window.orientation) {  
     case 0:  
         // Portrait 
-        $('.container-alert').removeClass('container-alert.closed');
+        $('.container-alert').removeClass('closed');
         break; 
         
     case 180: 
         // Portrait (Upside-down)
-        $('.container-alert').removeClass('container-alert.closed');
+        $('.container-alert').removeClass('closed');
         break; 
     
     default:
-		$('.container-alert').addClass('container-alert.closed');
+		$('.container-alert').addClass('closed');
 	}
 });
 
@@ -27,16 +27,16 @@ $(window).on("orientationchange",function(){
 	switch (window.orientation) {  
     case 0:  
         // Portrait 
-        $('.container-alert').removeClass('container-alert.closed');
+        $('.container-alert').removeClass('closed');
         break; 
         
     case 180: 
         // Portrait (Upside-down)
-        $('.container-alert').removeClass('container-alert.closed');
+        $('.container-alert').removeClass('closed');
         break; 
     
     default:
-		$('.container-alert').addClass('container-alert.closed');
+		$('.container-alert').addClass('closed');
 	}
 
 	// if (window.orientation == 0 || window.orientation == 180)
