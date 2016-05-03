@@ -7,23 +7,46 @@
 // });
 
 $(document).ready(function() {
-	if ((window).orientation==0)
-	{
-		$('.container-alert').removeClass('container-alert.closed');
-	}
-	else
-	{
+	switch (window.orientation) {  
+    case 0:  
+        // Portrait 
+        $('.container-alert').removeClass('container-alert.closed');
+        break; 
+        
+    case 180: 
+        // Portrait (Upside-down)
+        $('.container-alert').removeClass('container-alert.closed');
+        break; 
+    
+    default:
 		$('.container-alert').addClass('container-alert.closed');
 	}
 });
 
 $(window).on("orientationchange",function(){
-	if ((window).orientation==0 || (window).orientation==180)
-	{
-		$('.container-alert').removeClass('container-alert.closed');
-	}
-	else
-	{
+	switch (window.orientation) {  
+    case 0:  
+        // Portrait 
+        $('.container-alert').removeClass('container-alert.closed');
+        break; 
+        
+    case 180: 
+        // Portrait (Upside-down)
+        $('.container-alert').removeClass('container-alert.closed');
+        break; 
+    
+    default:
 		$('.container-alert').addClass('container-alert.closed');
 	}
+
+	// if (window.orientation == 0 || window.orientation == 180)
+	// {
+	// 	$('.container-alert').removeClass('container-alert.closed');
+	// }
+	// else
+	// {
+	// 	// // You can also manually force this event to fire.
+	// 	// $( window ).orientationchange();
+	// 	$('.container-alert').addClass('container-alert.closed');
+	// }
 });
