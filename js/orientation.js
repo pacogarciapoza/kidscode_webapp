@@ -11,32 +11,32 @@ $(document).ready(function() {
 	switch (window.orientation) {  
     case 0:  
         // Portrait 
-        $('.container-alert').removeClass('closed');
+       $(window).orientationchange();
         break; 
         
     case 180: 
         // Portrait (Upside-down)
-        $('.container-alert').removeClass('closed');
+        $(window).orientationchange();
         break; 
     
     default:
-		$('.container-alert').addClass('closed');
+		break; 
 	}
 
 	//android
 	switch (window.screen.orientation.angle) {  
     case 0:  
         // Portrait 
-        $('.container-alert').removeClass('closed');
+        $(window).orientationchange();
         break; 
         
     case 180: 
         // Portrait (Upside-down)
-        $('.container-alert').removeClass('closed');
-        break; 
+        $(window).orientationchange();
+        break;  
     
     default:
-		$('.container-alert').addClass('closed');
+		break; 
 	}
 });
 
@@ -45,32 +45,36 @@ $(window).bind("orientationchange",function(){
 	switch (window.orientation) {  
     case 0:  
         // Portrait 
-        $('.container-alert').removeClass('closed');
+        $(window).orientationchange();
         break; 
         
     case 180: 
         // Portrait (Upside-down)
-        $('.container-alert').removeClass('closed');
-        break; 
+        $(window).orientationchange();
+        break;  
     
     default:
-		$('.container-alert').addClass('closed');
+		// $('.container-alert').addClass('closed');
+		break;
 	}
 
 	//android
 	switch (window.screen.orientation.angle) {  
     case 0:  
         // Portrait 
-        $('.container-alert').removeClass('closed');
+        // $('.container-alert').removeClass('closed');
+        $(window).orientationchange();
         break; 
         
     case 180: 
         // Portrait (Upside-down)
-        $('.container-alert').removeClass('closed');
+        // $('.container-alert').removeClass('closed');
+        $(window).orientationchange();
         break; 
     
     default:
-		$('.container-alert').addClass('closed');
+		//$('.container-alert').addClass('closed');
+		break;
 	}
 
 	// if (window.orientation == 0 || window.orientation == 180)
