@@ -257,6 +257,40 @@
   margin: 0;
   padding: 0; }
 
+.container-alert {
+  outline-offset: -2px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: #222222;
+  opacity: .8; }
+
+.container-alert.closed {
+  display: none; }
+
+.container-alert-msg {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  text-align: center;
+  opacity: 1;
+  color: #ffffff;
+  width: 60%;
+  margin: auto; }
+
+.container-alert-msg:before {
+  content: 'la has cagadooooooooooo!!!!! gira el móvil por dioooooooosssssss santooooooo!!!'; }
+
+.container ul {
+  margin: 0;
+  padding: 0; }
+
 .container-nav {
   padding: .5rem;
   display: -webkit-box;

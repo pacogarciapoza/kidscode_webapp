@@ -1,21 +1,29 @@
 //detectamos orientation del móvil para informar que el juego funciona
 //solo en landscape
 
-$(window).on("orientationchange",function(){
+// $(window).on("orientationchange",function(){
 
-  alert("The orientation has changed!");
-});
-
-
-$(window).on("orientationchange",function(){
-  alert("Para poder jugar es necesario que tu dispositivo esté en horizontal (landscape)");
-});
-
+//   alert("The orientation has changed!");
+// });
 
 $(document).ready(function() {
 	if ((window).orientation==0)
 	{
-		alert("2 para poder jugar es necesario que tu dispositivo esté en horizontal (landscape)")
+		$('.container-alert').removeClass('container-alert.closed');
 	}
+	else
+	{
+		$('.container-alert').addClass('container-alert.closed');
+	}
+});
 
+$(window).on("orientationchange",function(){
+	if ((window).orientation==0 || (window).orientation==180)
+	{
+		$('.container-alert').removeClass('container-alert.closed');
+	}
+	else
+	{
+		$('.container-alert').addClass('container-alert.closed');
+	}
 });
