@@ -345,7 +345,7 @@
   /*Desktop*/ }
   @media only screen and (min-width: 768px) and (max-width: 1023px) {
     .container-game-info {
-      max-width: 60%;
+      max-width: 80%;
       border: 0.5rem solid #33bb44; } }
   @media only screen and (min-width: 1024px) {
     .container-game-info {
@@ -955,7 +955,7 @@ span {
 
 #rumble-ok-ex-2 {
   position: absolute;
-  top: 2.5rem;
+  top: 18%;
   right: 10rem;
   display: none;
   /*MEDIA QUERIES*/
