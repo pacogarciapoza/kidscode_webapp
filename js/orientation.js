@@ -23,8 +23,8 @@ $(document).ready(function() {
 	}
 });
 
-$(window).on("orientationchange",function(){
-	switch (window.orientation) {  
+$(window).bind("orientationchange",function(){
+	switch (window.screen.orientation.angle) {  
     case 0:  
         // Portrait 
         $('.container-alert').removeClass('closed');
