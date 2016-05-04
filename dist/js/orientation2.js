@@ -2,7 +2,7 @@
 //solo en landscape
 
 function isDesktop(){
-	if ($(window).width()>1020) {
+	if ($(window).width()>1024) {
 		return true;
 	}
 }
