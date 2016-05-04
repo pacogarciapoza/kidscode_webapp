@@ -96,15 +96,15 @@
   text-transform: uppercase; }
 
 .anim1-1 {
-  background-image: url(../img/step1.svg);
+  background-image: url(../img/ex1-anim1.svg);
   display: none; }
 
 .anim1-2 {
-  background-image: url(../img/step2.svg);
+  background-image: url(../img/ex1-anim2.svg);
   display: none; }
 
 .anim1-3 {
-  background-image: url(../img/step3.svg);
+  background-image: url(../img/ex1-anim3.svg);
   display: none; }
 
 #slide-2-0 {
@@ -207,14 +207,14 @@
   display: none; }
 
 .container-txt-2-6:before {
-  content: "¡Muy bien kid! sólo queda hacer una foto de las fichas con tu tablet o móvil";
+  content: "¡bravo kid! ¡ahora haz la foto con tu tablet o móvil!";
   text-transform: uppercase; }
 
 .container-txt-2-7 {
   display: none; }
 
 .container-txt-2-7:before {
-  content: "¡lo conseguiste kid! ¡rumble y tu sois unos grandes aventureros!";
+  content: "¡lo conseguiste kid! ¡sois unos grandes aventureros!";
   text-transform: uppercase; }
 
 .container-txt-2-8 {
@@ -225,23 +225,23 @@
   text-transform: uppercase; }
 
 .anim2-1 {
-  background-image: url(../img/step1.svg);
+  background-image: url(../img/ex2-anim1.svg);
   display: none; }
 
 .anim2-2 {
-  background-image: url(../img/step2.svg);
+  background-image: url(../img/ex2-anim2.svg);
   display: none; }
 
 .anim2-3 {
-  background-image: url(../img/step2.svg);
+  background-image: url(../img/ex2-anim3.svg);
   display: none; }
 
 .anim2-4 {
-  background-image: url(../img/step2.svg);
+  background-image: url(../img/ex2-anim4.svg);
   display: none; }
 
 .anim2-5 {
-  background-image: url(../img/step3.svg);
+  background-image: url(../img/ex2-anim5.svg);
   display: none; }
 
 .container {
@@ -252,6 +252,59 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center; }
+
+.container ul {
+  margin: 0;
+  padding: 0; }
+
+.container-alert {
+  outline-offset: -2px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #222222;
+  opacity: .9; }
+
+.container-alert2 {
+  outline-offset: -2px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  height: 150%;
+  width: 100%;
+  background-color: #222222;
+  opacity: .9; }
+
+.closed {
+  display: none; }
+
+.container-alert-msg {
+  position: relative;
+  top: 25%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  text-align: center;
+  opacity: 1;
+  color: #ffffff;
+  width: 60%;
+  margin: auto; }
+
+.container-alert-msg:before {
+  content: 'Para poder disfrutar de la aventura junto a Rumble gira tu dispositivo, verás el juego en horizontal (landscape)';
+  text-transform: uppercase; }
+
+.container-alert-img {
+  position: relative;
+  top: 10%;
+  background-image: url(../img/rumble_breadcrumb.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: .8;
+  width: 50%;
+  height: 7rem;
+  margin: auto; }
 
 .container ul {
   margin: 0;
@@ -338,17 +391,19 @@
       -ms-flex-align: center;
           align-items: center;
   background-color: rgba(255, 255, 255, 0.8);
-  border: .5rem solid #33bb44;
+  border: 0.3rem solid #33bb44;
   border-radius: 1rem;
   /*MEDIA QUERIES*/
   /*Tablet*/
   /*Desktop*/ }
   @media only screen and (min-width: 768px) and (max-width: 1023px) {
     .container-game-info {
-      max-width: 60%; } }
+      max-width: 80%;
+      border: 0.5rem solid #33bb44; } }
   @media only screen and (min-width: 1024px) {
     .container-game-info {
-      max-width: 60%; } }
+      max-width: 60%;
+      border: 0.5rem solid #33bb44; } }
 
 .container-game-info-txt {
   text-transform: uppercase;
@@ -376,8 +431,8 @@
   /*Desktop*/ }
 
 .container-game-info-grphx-btn-left {
-  width: 0.5rem;
-  height: 0.5rem;
+  width: 0.15rem;
+  height: 0.15rem;
   position: absolute;
   left: .2rem;
   bottom: .5rem;
@@ -390,8 +445,8 @@
   /*Desktop*/ }
   @media only screen and (min-width: 768px) and (max-width: 1023px) {
     .container-game-info-grphx-btn-left {
-      width: 3.75rem;
-      height: 3.75rem;
+      width: 2.25rem;
+      height: 2.25rem;
       /*margin: 0 5rem 1rem 1rem;*/ } }
   @media only screen and (min-width: 1024px) {
     .container-game-info-grphx-btn-left {
@@ -400,8 +455,8 @@
       /*margin: 0 5rem 1rem 1rem;*/ } }
 
 .container-game-info-grphx-btn-right {
-  width: 0.5rem;
-  height: 0.5rem;
+  width: 0.15rem;
+  height: 0.15rem;
   position: absolute;
   right: .2rem;
   bottom: .5rem;
@@ -414,16 +469,16 @@
   /*Desktop*/ }
   @media only screen and (min-width: 768px) and (max-width: 1023px) {
     .container-game-info-grphx-btn-right {
-      width: 3.75rem;
-      height: 3.75rem; } }
+      width: 2.25rem;
+      height: 2.25rem; } }
   @media only screen and (min-width: 1024px) {
     .container-game-info-grphx-btn-right {
       width: 3.75rem;
       height: 3.75rem; } }
 
 .container-game-info-grphx-btn-reload {
-  width: 0.5rem;
-  height: 0.5rem;
+  width: 0.15rem;
+  height: 0.15rem;
   position: absolute;
   right: .2rem;
   bottom: .5rem;
@@ -436,8 +491,8 @@
   /*Desktop*/ }
   @media only screen and (min-width: 768px) and (max-width: 1023px) {
     .container-game-info-grphx-btn-reload {
-      width: 3.75rem;
-      height: 3.75rem;
+      width: 2.25rem;
+      height: 2.25rem;
       /*margin: 0 1rem 1rem 5rem;*/ } }
   @media only screen and (min-width: 1024px) {
     .container-game-info-grphx-btn-reload {
@@ -446,8 +501,8 @@
       /*margin: 0 1rem 1rem 5rem;*/ } }
 
 .container-game-info-grphx-btn-camera {
-  width: 0.5rem;
-  height: 0.5rem;
+  width: 0.15rem;
+  height: 0.15rem;
   position: absolute;
   right: .2rem;
   bottom: .5rem;
@@ -460,31 +515,31 @@
   /*Desktop*/ }
   @media only screen and (min-width: 768px) and (max-width: 1023px) {
     .container-game-info-grphx-btn-camera {
-      width: 3.75rem;
-      height: 3.75rem; } }
+      width: 2.25rem;
+      height: 2.25rem; } }
   @media only screen and (min-width: 1024px) {
     .container-game-info-grphx-btn-camera {
       width: 3.75rem;
       height: 3.75rem; } }
 
 .container-game-info-grphx-anim {
-  width: 10rem;
+  width: 15rem;
   height: 4rem;
   /*MEDIA QUERIES*/
   /*Tablet*/
   /*Desktop*/ }
   @media only screen and (min-width: 768px) and (max-width: 1023px) {
     .container-game-info-grphx-anim {
-      width: 15rem;
+      width: 20rem;
       height: 7.5rem; } }
   @media only screen and (min-width: 1024px) {
     .container-game-info-grphx-anim {
-      width: 15rem;
-      height: 7.5rem; } }
+      width: 28rem;
+      height: 7rem; } }
 
 .anim-img {
-  width: 10rem;
-  height: 3rem;
+  width: 15rem;
+  height: 4rem;
   text-align: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -493,12 +548,12 @@
   /*Desktop*/ }
   @media only screen and (min-width: 768px) {
     .anim-img {
-      width: 15rem;
+      width: 20rem;
       height: 7.5rem; } }
   @media only screen and (min-width: 1024px) {
     .anim-img {
-      width: 15rem;
-      height: 7.5rem; } }
+      width: 28rem;
+      height: 7rem; } }
 
 /*BOTONES*/
 #btn-cam, #btn-reload, #btn-go-index {
@@ -844,8 +899,8 @@ h2 {
   font-size: 0.9rem;
   font-weight: 400;
   line-height: 1.5rem;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin-top: .25rem;
+  margin-bottom: .5rem;
   /*MEDIA QUERIES*/
   /*Tablet*/
   /*Desktop*/ }
@@ -893,6 +948,21 @@ h6 {
 .uppercase {
   text-transform: uppercase; }
 
+span {
+  font-size: .6rem;
+  line-height: .75rem;
+  /*MEDIA QUERIES*/
+  /*Tablet*/
+  /*Desktop*/ }
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    span {
+      font-size: 1rem;
+      line-height: 1.45rem; } }
+  @media only screen and (min-width: 1024px) {
+    span {
+      font-size: 1rem;
+      line-height: 1.45rem; } }
+
 .clearfix:before,
 .clearfix:after {
   content: " ";
@@ -904,18 +974,18 @@ h6 {
 .clearfix {
   *zoom: 1; }
 
-.rumble-hello {
+.rumble-hello-ex-1 {
   width: 8rem;
   height: auto;
   /*MEDIA QUERIES*/
   /*Tablet*/
   /*Desktop*/ }
   @media only screen and (min-width: 768px) and (max-width: 1023px) {
-    .rumble-hello {
+    .rumble-hello-ex-1 {
       width: 18rem;
       height: auto; } }
   @media only screen and (min-width: 1024px) {
-    .rumble-hello {
+    .rumble-hello-ex-1 {
       width: 18rem;
       height: auto; } }
 
@@ -938,7 +1008,7 @@ h6 {
 
 #rumble-ok-ex-2 {
   position: absolute;
-  top: .5rem;
+  top: 18%;
   right: 10rem;
   display: none;
   /*MEDIA QUERIES*/
@@ -946,12 +1016,27 @@ h6 {
   /*Desktop*/ }
   @media only screen and (min-width: 768px) and (max-width: 1023px) {
     #rumble-ok-ex-2 {
-      top: .5rem;
+      top: 5.1rem;
       right: 18rem; } }
   @media only screen and (min-width: 1024px) {
     #rumble-ok-ex-2 {
-      top: 3rem;
+      top: 5.7rem;
       right: 18rem; } }
+
+.rumble-hello-ex-2 {
+  width: 7.5rem;
+  height: auto;
+  /*MEDIA QUERIES*/
+  /*Tablet*/
+  /*Desktop*/ }
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .rumble-hello-ex-2 {
+      width: 14rem;
+      height: auto; } }
+  @media only screen and (min-width: 1024px) {
+    .rumble-hello-ex-2 {
+      width: 16rem;
+      height: auto; } }
 
 .content-progress {
   display: -webkit-box;
@@ -1111,20 +1196,33 @@ h6 {
   background-position: center;
   background-size: cover;
   width: auto;
-  height: 100vh; }
+  height: 100vh;
+  /*MEDIA QUERIES*/
+  /*landscape*/
+  /*Mobile landscape*/ }
+  @media only screen and (orientation: portrait) {
+    .list-background {
+      height: auto; } }
+  @media only screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
+    .list-background {
+      height: auto; } }
 
 .list-main-container {
   text-align: center;
-  margin-top: 20%;
+  padding-top: 20%;
   /*MEDIA QUERIES*/
+  /*Mobile landscape*/
   /*Tablet*/
   /*Desktop*/ }
+  @media only screen and (min-width: 320px) and (orientation: landscape) {
+    .list-main-container {
+      padding-top: 5%; } }
   @media only screen and (min-width: 768px) and (max-width: 1023px) {
     .list-main-container {
-      margin-top: 5%; } }
+      padding-top: 5%; } }
   @media only screen and (min-width: 1024px) {
     .list-main-container {
-      margin-top: 4%; } }
+      padding-top: 4%; } }
 
 .list-btn {
   width: 210px;

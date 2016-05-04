@@ -19,7 +19,7 @@ a{
     line-height: 1.5rem;
     margin-top: 0.75rem;
     margin-bottom: 0.75rem;
-    color: #1794cf;
+    color: $primaryColorLnk;
     text-decoration: none;
 }
 p{
@@ -27,7 +27,7 @@ p{
     line-height:1.45rem;
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
-    color:#0a6d76;
+    color: $secondaryColorBgBlue2;
 }
 
 h1{
@@ -36,7 +36,7 @@ h1{
     margin-top: 1rem;
     margin-bottom: 1rem;
     font-weight: 700;
-    color: #404040;
+    color: $primaryColorBgBlack;
 
     /*MEDIA QUERIES*/
     /*Tablet*/
@@ -60,14 +60,14 @@ h2{
     line-height:2rem;
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
-    color:#404040;
+    color: $primaryColorBgBlack;
 }
 .h2-t1{
     font-size: 0.9rem;
     font-weight: 400;
     line-height: 1.5rem;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-top: .25rem;
+    margin-bottom: .5rem;
 	/*MEDIA QUERIES*/
     /*Tablet*/
     @media only screen and (min-width: 768px) and (max-width: 1023px){
@@ -90,7 +90,7 @@ h3{
     line-height:2rem;
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
-    color:#404040;
+    color: $primaryColorBgBlack;
     
 }
 h4{
@@ -119,6 +119,23 @@ h6{
 }
 .uppercase{
     text-transform: uppercase;
+}
+
+span{
+    font-size: .6rem;
+    line-height:.75rem;
+    /*MEDIA QUERIES*/
+    /*Tablet*/
+    @media only screen and (min-width: 768px) and (max-width: 1023px){
+        font-size: 1rem;
+        line-height: 1.45rem;
+    }
+
+    /*Desktop*/
+    @media only screen and (min-width: 1024px){
+        font-size: 1rem;
+        line-height: 1.45rem;
+    }
 }
 
 

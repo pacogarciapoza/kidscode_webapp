@@ -66,7 +66,12 @@ $(document).ready(function() {
 		var prevSlide = actualSlide.prev();
 		
 		if (prevSlide.length == 0) {
-			prevSlide = $('#slide-1-6');//cambiarlo a página de selección de ejercicios
+			//prevSlide = $('#slide-1-6');//cambiarlo a página de selección de ejercicios
+			//vamos a la página de selección de ejercicio index.html
+			$(".container-nav-btn-cancel").click(function() { 
+     			location.href = this.href; 
+			});
+			$(".container-nav-btn-cancel").click();
 		}
 
 		if (actualSlide.data('slide')=='1'|| actualSlide.data('slide')=='2'||actualSlide.data('slide')=='3'||actualSlide.data('slide')=='4')
