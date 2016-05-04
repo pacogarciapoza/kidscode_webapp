@@ -268,14 +268,14 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-color: #222222;
-  opacity: .8; }
+  opacity: .9; }
 
-.container-alert.closed {
+.closed {
   display: none; }
 
 .container-alert-msg {
   position: relative;
-  top: 50%;
+  top: 25%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   text-align: center;
@@ -285,7 +285,19 @@
   margin: auto; }
 
 .container-alert-msg:before {
-  content: 'la has cagadooooooooooo!!!!! gira el móvil por dioooooooosssssss santooooooo!!!'; }
+  content: 'Para poder disfrutar de la aventura junto a Rumble gira tu dispositivo, verás el juego en horizontal (landscape)';
+  text-transform: uppercase; }
+
+.container-alert-img {
+  position: relative;
+  top: 10%;
+  background-image: url(../img/rumble_breadcrumb.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: .8;
+  width: 50%;
+  height: 7rem;
+  margin: auto; }
 
 .container ul {
   margin: 0;

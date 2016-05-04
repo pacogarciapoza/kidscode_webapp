@@ -1,60 +1,86 @@
 //detectamos orientation del móvil para informar que el juego funciona
 //solo en landscape
 
-// $(window).on("orientationchange",function(){
-
-//   alert("The orientation has changed!");
-// });
-
+//cuando se carga la página
 $(document).ready(function() {
 	//iOS
 	switch (window.orientation) {  
     case 0:  
         // Portrait 
-       $(window).orientationchange();
+        if ($('.container-alert').hasClass('closed'))
+        {
+    	    $('.container-alert').removeClass('closed');
+    	}
         break; 
         
-    case 180: 
+    case 180:  
         // Portrait (Upside-down)
-        $(window).orientationchange();
+        if ($('.container-alert').hasClass('closed'))
+        {
+    	    $('.container-alert').removeClass('closed');
+    	}
         break; 
     
-    default:
-		break; 
+    default: //90 and -90 are landscape
+    	if (!($('.container-alert').hasClass('closed')))
+        {
+			$('.container-alert').addClass('closed');
+		}
+		break;
 	}
 
 	//android
 	switch (window.screen.orientation.angle) {  
     case 0:  
-        // Portrait 
-        $(window).orientationchange();
+        // Portrait
+        if ($('.container-alert').hasClass('closed'))
+        { 
+        	$('.container-alert').removeClass('closed');
+        }
         break; 
         
-    case 180: 
+    case 180:  
         // Portrait (Upside-down)
-        $(window).orientationchange();
-        break;  
+        if ($('.container-alert').hasClass('closed'))
+        { 
+        	$('.container-alert').removeClass('closed');
+        }
+        break; 
     
     default:
-		break; 
+    	if (!($('.container-alert').hasClass('closed')))
+        {
+			$('.container-alert').addClass('closed');
+		}
+		break;
 	}
 });
 
+//cuando se realiza un cambio de orientation del dispositivo
 $(window).bind("orientationchange",function(){
 	//iOS
 	switch (window.orientation) {  
     case 0:  
         // Portrait 
-        $(window).orientationchange();
+        if ($('.container-alert').hasClass('closed'))
+        { 
+        	$('.container-alert').removeClass('closed');
+        }
         break; 
         
-    case 180: 
-        // Portrait (Upside-down)
-        $(window).orientationchange();
+    case 180:  
+        // Portrait  (Upside-down)
+        if ($('.container-alert').hasClass('closed'))
+        { 
+        	$('.container-alert').removeClass('closed');
+        }
         break;  
     
     default:
-		// $('.container-alert').addClass('closed');
+    	if (!($('.container-alert').hasClass('closed')))
+        {
+			$('.container-alert').addClass('closed');
+		}
 		break;
 	}
 
@@ -62,18 +88,25 @@ $(window).bind("orientationchange",function(){
 	switch (window.screen.orientation.angle) {  
     case 0:  
         // Portrait 
-        // $('.container-alert').removeClass('closed');
-        $(window).screen.orientationchange();
+        if ($('.container-alert').hasClass('closed'))
+        { 
+        	$('.container-alert').removeClass('closed');
+        }
         break; 
         
-    case 180: 
-        // Portrait (Upside-down)
-        // $('.container-alert').removeClass('closed');
-        $(window).screen.orientationchange();
+    case 180:  
+        // Portrait  (Upside-down)
+        if ($('.container-alert').hasClass('closed'))
+        { 
+        	$('.container-alert').removeClass('closed');
+        }
         break; 
     
     default:
-		//$('.container-alert').addClass('closed');
+    	if (!($('.container-alert').hasClass('closed')))
+        {
+			$('.container-alert').addClass('closed');
+		}
 		break;
 	}
 
