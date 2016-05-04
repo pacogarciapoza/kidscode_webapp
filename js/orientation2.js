@@ -7,9 +7,14 @@ function isDesktop(){
 	}
 }
 
+function isMobile() {
+  try{ document.createEvent("TouchEvent"); return true; }
+  catch(e){ return false; }
+}
+
 //cuando se carga la página
 $(document).ready(function() {
-	if(!isDesktop()){
+	if(isMobile()){
 		//iOS
 		switch (window.orientation) {  
 			case 0:  
@@ -66,7 +71,7 @@ $(document).ready(function() {
 
 //cuando se realiza un cambio de orientation del dispositivo
 $(window).bind("orientationchange",function(){
-	if(!isDesktop()){
+	if(isMobile()){
 		//iOS
 		switch (window.orientation) {  
 			case 0:  
