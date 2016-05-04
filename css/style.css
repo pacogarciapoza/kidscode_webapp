@@ -1198,8 +1198,12 @@ span {
   width: auto;
   height: 100vh;
   /*MEDIA QUERIES*/
-  /*landscape*/ }
+  /*landscape*/
+  /*Mobile landscape*/ }
   @media only screen and (orientation: portrait) {
+    .list-background {
+      height: auto; } }
+  @media only screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
     .list-background {
       height: auto; } }
 
@@ -1207,8 +1211,12 @@ span {
   text-align: center;
   padding-top: 20%;
   /*MEDIA QUERIES*/
+  /*Mobile landscape*/
   /*Tablet*/
   /*Desktop*/ }
+  @media only screen and (min-width: 320px) and (orientation: landscape) {
+    .list-main-container {
+      padding-top: 5%; } }
   @media only screen and (min-width: 768px) and (max-width: 1023px) {
     .list-main-container {
       padding-top: 5%; } }
