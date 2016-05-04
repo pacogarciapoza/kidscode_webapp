@@ -262,11 +262,18 @@
   position: absolute;
   top: 0;
   left: 0;
-  height: 100vh;
+  height: 100%;
   width: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
+  background-color: #222222;
+  opacity: .9; }
+
+.container-alert2 {
+  outline-offset: -2px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  height: 150%;
+  width: 100%;
   background-color: #222222;
   opacity: .9; }
 
@@ -1189,20 +1196,25 @@ span {
   background-position: center;
   background-size: cover;
   width: auto;
-  height: 100vh; }
+  height: 100vh;
+  /*MEDIA QUERIES*/
+  /*landscape*/ }
+  @media only screen and (orientation: portrait) {
+    .list-background {
+      height: auto; } }
 
 .list-main-container {
   text-align: center;
-  margin-top: 20%;
+  padding-top: 20%;
   /*MEDIA QUERIES*/
   /*Tablet*/
   /*Desktop*/ }
   @media only screen and (min-width: 768px) and (max-width: 1023px) {
     .list-main-container {
-      margin-top: 5%; } }
+      padding-top: 5%; } }
   @media only screen and (min-width: 1024px) {
     .list-main-container {
-      margin-top: 4%; } }
+      padding-top: 4%; } }
 
 .list-btn {
   width: 210px;
