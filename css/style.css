@@ -974,18 +974,18 @@ span {
 .clearfix {
   *zoom: 1; }
 
-.rumble-hello {
+.rumble-hello-ex-1 {
   width: 8rem;
   height: auto;
   /*MEDIA QUERIES*/
   /*Tablet*/
   /*Desktop*/ }
   @media only screen and (min-width: 768px) and (max-width: 1023px) {
-    .rumble-hello {
+    .rumble-hello-ex-1 {
       width: 18rem;
       height: auto; } }
   @media only screen and (min-width: 1024px) {
-    .rumble-hello {
+    .rumble-hello-ex-1 {
       width: 18rem;
       height: auto; } }
 
