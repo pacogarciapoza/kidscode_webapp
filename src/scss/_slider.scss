@@ -8,13 +8,23 @@
 //EJERCICIO 1
 //cargamos background segun el slide en el que estamos
 @for $i from 0 through 6 {
-  #slide-1-#{$i} {
-    background-image: url(../img/ex1-#{$i}_desktop.svg); 
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
+  @if ($i==5)
+  {
+    #slide-1-#{$i} {
+      background-image: url(../img/ex1-#{$i}_desktop.gif); 
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
   }
-
+  @else{
+    #slide-1-#{$i} {
+      background-image: url(../img/ex1-#{$i}_desktop.svg); 
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+  }
 }
 
 //cargamos texto segun el slide en el que estamos buscando en la lista de textos
@@ -40,13 +50,22 @@
 //EJERCICIO 2
 //cargamos background segun el slide en el que estamos
 @for $i from 0 through 8 {
-  #slide-2-#{$i} {
-    background-image: url(../img/ex2-#{$i}_desktop.svg); 
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: top center;
+  @if ($i==7){
+    #slide-2-#{$i} {
+      background-image: url(../img/ex2-#{$i}_desktop.gif); 
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: top center;
+    }
   }
-
+  @else{
+    #slide-2-#{$i} {
+      background-image: url(../img/ex2-#{$i}_desktop.svg); 
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: top center;
+    }
+  }
 }
 
 //cargamos texto segun el slide en el que estamos buscando en la lista de textos
