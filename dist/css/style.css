@@ -1307,3 +1307,15 @@ span {
 
 .img-ejer2:hover {
   background-image: url(../img/second-bg-animated.gif); }
+
+.img-kid1 {
+  background-image: url(../img/kid_profile1.png);
+  background-color: #11bbcc;
+  background-size: contain;
+  background-position: 50%; }
+
+.img-kid2 {
+  background-image: url(../img/kid_profile2.png);
+  background-color: #11bbcc;
+  background-size: contain;
+  background-position: 50%; }
